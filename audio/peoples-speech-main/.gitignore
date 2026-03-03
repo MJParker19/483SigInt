@@ -1,0 +1,9 @@
+bazel-*
+*.pyc
+*.log
+*.log.*
+settings.json
+# emacs backups
+*~
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
