@@ -1,0 +1,29 @@
+{
+  "version": "2023.1",
+  "applications": [],
+  "platforms": [
+    {
+      "name": "design_1_wrapper"
+    }
+  ],
+  "systems": [
+    {
+      "name": "Nexys-Video-DMA_system",
+      "platform": "C:/Work/NVDMA/Nexys-Video-SW/ws/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm",
+      "sysConfig": "design_1_wrapper",
+      "buildConfig": "Debug",
+      "applications": [
+        {
+          "name": "Nexys-Video-DMA",
+          "platform": "C:/Work/NVDMA/Nexys-Video-SW/ws/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm",
+          "platformPath": "C:\\Work\\NVDMA\\Nexys-Video-SW\\ws\\design_1_wrapper\\export\\design_1_wrapper",
+          "sysConfig": "design_1_wrapper",
+          "domain": "domain_microblaze_0",
+          "system": "Nexys-Video-DMA_system"
+        }
+      ],
+      "platformPath": "C:\\Work\\NVDMA\\Nexys-Video-SW\\ws\\design_1_wrapper\\export\\design_1_wrapper"
+    }
+  ],
+  "others": []
+}

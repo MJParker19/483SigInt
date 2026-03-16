@@ -1,0 +1,1851 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sun Mar 15 01:21:53 2026
+# Process ID         : 76468
+# Current directory  : C:/Users/Ryan/Desktop/Nexys-Video-HW
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent56084 C:\Users\Ryan\Desktop\Nexys-Video-HW\Nexys-Video-HW.xpr
+# Log file           : C:/Users/Ryan/Desktop/Nexys-Video-HW/vivado.log
+# Journal file       : C:/Users/Ryan/Desktop/Nexys-Video-HW\vivado.jou
+# Running On         : Ryans-PC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : AMD Ryzen 7 5700G with Radeon Graphics         
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16523 MB
+# Swap memory        : 16523 MB
+# Total Virtual      : 33047 MB
+# Available Virtual  : 13427 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.6\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.7\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.6\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.7\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu110\1.4\board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208ld\production\2.0\board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216ld\production\2.0\board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670ld\1.0\board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Work/NVDMA/Nexys-Video-HW/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.6\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.7\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.6\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.7\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu110\1.4\board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208ld\production\2.0\board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216ld\production\2.0\board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670ld\1.0\board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Project 1-5713] Board part 'digilentinc.com:nexys_video:part0:1.2' set for the project  is not found. BoardPart property will be unset. Please select board from latest repo build 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ipdefs/repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_microblaze_0_axi_intc_0
+design_1_dlmb_v10_0
+design_1_dlmb_bram_if_cntlr_0
+design_1_ilmb_v10_0
+design_1_ilmb_bram_if_cntlr_0
+design_1_lmb_bram_0
+design_1_microblaze_0_xlconcat_0
+design_1_axi_gpio_0_0
+design_1_mig_7series_0_0
+design_1_rst_clk_wiz_1_100M_0
+design_1_rst_mig_7series_0_100M_0
+design_1_axi_dma_0_0
+design_1_axi_iic_0_0
+design_1_xbar_0
+design_1_d_axi_i2s_audio_0_0
+design_1_axi_interconnect_0_0
+design_1_axi_uartlite_0_0
+design_1_mdm_1_0
+design_1_microblaze_0_0
+design_1_xbar_1
+design_1_microblaze_0_axi_periph_0
+
+INFO: [Project 1-5698] Found the below utility IPs instantiated in block design C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.srcs/sources_1/bd/design_1/design_1.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994.
+Utility IP Component Instances:
+ design_1_microblaze_0_xlconcat_0
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 1977.859 ; gain = 278.535
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+open_bd_design {C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - microblaze_0_xlconcat
+Adding component instance block -- xilinx.com:ip:mig_7series:4.2 - mig_7series_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_mig_7series_0_100M
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:axi_iic:2.1 - axi_iic_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- digilentinc.com:user:d_axi_i2s_audio:2.0 - d_axi_i2s_audio_0
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Successfully read diagram <design_1> from block design file <C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2081.242 ; gain = 100.477
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'design_1_wrapper'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+Generating merged BMM file for the design top 'design_1_wrapper'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/2025.1/Vivado/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/2025.1/Vivado/data/xsim/xsim.ini' copied to run dir:'C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-20] The project contains locked or custom IPs. The pre-compiled version of these IPs will not be referenced and the sources from these IP libraries will be compiled locally.
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'design_1_wrapper'...
+Generating merged BMM file for the design top 'design_1_wrapper'...
+INFO: [SIM-utils-54] Inspecting design source files for 'design_1_wrapper' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [SIM-utils-40] Using sources from the locked IP version (pre-compiled version will not be referenced) - axi_lite_ipif_v3_0_4
+INFO: [SIM-utils-40] Using sources from the locked IP version (pre-compiled version will not be referenced) - axi_intc_v4_1_17
+INFO: [SIM-utils-40] Using sources from the locked IP version (pre-compiled version will not be referenced) - lmb_v10_v3_0_12
+INFO: [SIM-utils-40] Using sources from the locked IP version (pre-compiled version will not be referenced) - lmb_bram_if_cntlr_v4_0_22
+INFO: [SIM-utils-40] Using sources from the locked IP version (pre-compiled version will not be referenced) - blk_mem_gen_v8_4_6
+INFO: [SIM-utils-40] Using sources from the locked IP version (pre-compiled version will not be referenced) - xlconcat_v2_1_4
+INFO: [SIM-utils-40] Using sources from the locked IP version (pre-compiled version will not be referenced) - lib_cdc_v1_0_2
+INFO: [SIM-utils-40] Using sources from the locked IP version (pre-compiled version will not be referenced) - proc_sys_reset_v5_0_13
+INFO: [SIM-utils-40] Using sources from the locked IP version (pre-compiled version will not be referenced) - lib_pkg_v1_0_2
+INFO: [SIM-utils-40] Using sources from the locked IP version (pre-compiled version will not be referenced) - fifo_generator_v13_2_8
+INFO: [SIM-utils-40] Using sources from the locked IP version (pre-compiled version will not be referenced) - lib_fifo_v1_0_17
+INFO: [SIM-utils-40] Using sources from the locked IP version (pre-compiled version will not be referenced) - lib_srl_fifo_v1_0_2
+INFO: [SIM-utils-40] Using sources from the locked IP version (pre-compiled version will not be referenced) - axi_datamover_v5_1_30
+INFO: [SIM-utils-40] Using sources from the locked IP version (pre-compiled version will not be referenced) - axi_sg_v4_1_16
+INFO: [SIM-utils-40] Using sources from the locked IP version (pre-compiled version will not be referenced) - axi_dma_v7_1_29
+INFO: [SIM-utils-40] Using sources from the locked IP version (pre-compiled version will not be referenced) - interrupt_control_v3_1_4
+INFO: [SIM-utils-40] Using sources from the locked IP version (pre-compiled version will not be referenced) - axi_gpio_v2_0_30
+INFO: [SIM-utils-40] Using sources from the locked IP version (pre-compiled version will not be referenced) - axi_iic_v2_1_4
+INFO: [SIM-utils-40] Using sources from the locked IP version (pre-compiled version will not be referenced) - generic_baseblocks_v2_1_0
+INFO: [SIM-utils-40] Using sources from the locked IP version (pre-compiled version will not be referenced) - axi_infrastructure_v1_1_0
+INFO: [SIM-utils-40] Using sources from the locked IP version (pre-compiled version will not be referenced) - axi_register_slice_v2_1_28
+INFO: [SIM-utils-40] Using sources from the locked IP version (pre-compiled version will not be referenced) - axi_data_fifo_v2_1_27
+INFO: [SIM-utils-40] Using sources from the locked IP version (pre-compiled version will not be referenced) - axi_crossbar_v2_1_29
+INFO: [SIM-utils-40] Using sources from the locked IP version (pre-compiled version will not be referenced) - axi_uartlite_v2_0_32
+INFO: [SIM-utils-40] Using sources from the locked IP version (pre-compiled version will not be referenced) - mdm_v3_2_24
+INFO: [SIM-utils-40] Using sources from the locked IP version (pre-compiled version will not be referenced) - microblaze_v11_0_11
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj design_1_wrapper_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/bb55/simulation/blk_mem_gen_v8_4.v" into library blk_mem_gen_v8_4_6
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_4
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_4
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_6_output_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_6_softecc_output_reg_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_6_mem_module
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_6
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_lmb_bram_0/sim/design_1_lmb_bram_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_lmb_bram_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v" into library xlconcat_v2_1_4
+INFO: [VRFC 10-311] analyzing module xlconcat_v2_1_4_xlconcat
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/sim/design_1_microblaze_0_xlconcat_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_microblaze_0_xlconcat_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_addr_decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_ctrl_addr_decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_read.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_ctrl_read
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_ctrl_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_reg_bank.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_ctrl_reg_bank
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_ctrl_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_write.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_ctrl_write
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_ar_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_ar_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_aw_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_aw_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_b_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_b_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_cmd_arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_cmd_arbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_cmd_fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_cmd_fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_cmd_translator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_cmd_translator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_incr_cmd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_incr_cmd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_r_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_r_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_simple_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_simple_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_wrap_cmd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_wrap_cmd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_wr_cmd_fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_wr_cmd_fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_w_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_w_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_axic_register_slice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_axic_register_slice
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_axi_register_slice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_axi_register_slice
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_axi_upsizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_axi_upsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_a_upsizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_a_upsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_and.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_carry_and
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_latch_and.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_carry_latch_and
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_latch_or.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_carry_latch_or
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_or.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_carry_or
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_command_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_command_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_comparator_sel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_comparator_sel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_comparator_sel_static.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_comparator_sel_static
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_r_upsizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_r_upsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_w_upsizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_w_upsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/clocking/mig_7series_v4_2_clk_ibuf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_clk_ibuf
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_infrastructure
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/clocking/mig_7series_v4_2_iodelay_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_iodelay_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/clocking/mig_7series_v4_2_tempmon.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_tempmon
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_arb_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_arb_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_arb_row_col
+WARNING: [VRFC 10-8332] begin/end is required for generate-for in this mode of Verilog [C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v:252]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_arb_select.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_arb_select
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_bank_cntrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_bank_common.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_bank_common
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_bank_compare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_bank_compare
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_bank_mach.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_bank_mach
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_bank_queue
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_bank_state
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_col_mach.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_col_mach
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_mc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_mc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_rank_cntrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_rank_cntrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_rank_common.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_rank_common
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_rank_mach.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_rank_mach
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_round_robin_arb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_buf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ecc_buf
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_dec_fix.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ecc_dec_fix
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ecc_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_merge_enc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ecc_merge_enc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/ecc/mig_7series_v4_2_fi_xor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_fi_xor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/ip_top/mig_7series_v4_2_memc_ui_top_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_memc_ui_top_axi
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/ip_top/mig_7series_v4_2_mem_intfc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_mem_intfc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_byte_group_io
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_byte_lane
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_calib_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_if_post_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_if_post_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_mc_phy
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_mc_phy_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_of_pre_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_4lanes
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_dqs_found_cal
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_dqs_found_cal_hr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_init
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_cntlr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_cntlr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_edge.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_edge
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_lim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_lim
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_po_cntlr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_po_cntlr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_samp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_samp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_oclkdelay_cal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_oclkdelay_cal
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_prbs_rdlvl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_prbs_rdlvl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_rdlvl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_tempmon.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_tempmon
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_wrcal
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_wrlvl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl_off_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_wrlvl_off_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_prbs_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_skip_calib_tap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_skip_calib_tap
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_poc_cc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_poc_cc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_poc_edge_store.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_poc_edge_store
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_poc_meta.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_poc_meta
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_poc_pd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_poc_pd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_poc_tap_base.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_poc_tap_base
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_poc_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_poc_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/ui/mig_7series_v4_2_ui_cmd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ui_cmd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/ui/mig_7series_v4_2_ui_rd_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ui_rd_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/ui/mig_7series_v4_2_ui_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ui_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/ui/mig_7series_v4_2_ui_wr_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ui_wr_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/design_1_mig_7series_0_0_mig_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_mig_7series_0_0_mig
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/design_1_mig_7series_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_mig_7series_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/c97d/simulation/fifo_generator_vlog_beh.v" into library fifo_generator_v13_2_8
+INFO: [VRFC 10-311] analyzing module fifo_generator_vlog_beh
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_2_8_CONV_VER
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_2_8_sync_stage
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_2_8_bhv_ver_as
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_2_8_beh_ver_ll_afifo
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_2_8_bhv_ver_ss
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_2_8_bhv_ver_preload0
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_2_8_axic_reg_slice
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/c97d/hdl/fifo_generator_v13_2_rfs.v" into library fifo_generator_v13_2_8
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_2_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_and
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_latch_and
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_latch_or
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_or
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_command_fifo
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_mask_static
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_mask
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel_mask_static
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel_mask
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel_static
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_static
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_mux_enc
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_mux
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_nto1_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v" into library axi_infrastructure_v1_1_0
+INFO: [VRFC 10-311] analyzing module axi_infrastructure_v1_1_0_axi2vector
+INFO: [VRFC 10-311] analyzing module axi_infrastructure_v1_1_0_axic_srl_fifo
+INFO: [VRFC 10-311] analyzing module axi_infrastructure_v1_1_0_vector2axi
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v" into library axi_register_slice_v2_1_28
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_28_test_master
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_28_test_slave
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_28_tdm_sample
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_28_auto_slr
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_28_auto_src
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_28_auto_dest
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_28_srl_rtl
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_28_axic_register_slice
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_28_multi_slr
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_28_middle_region_slr
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_28_source_region_slr
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_28_dest_region_slr
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_28_single_slr
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_28_axic_reg_srl_fifo
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_28_axi_register_slice
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/fab7/hdl/axi_data_fifo_v2_1_vl_rfs.v" into library axi_data_fifo_v2_1_27
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_27_axic_fifo
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_27_fifo_gen
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_27_axic_srl_fifo
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_27_axic_reg_srl_fifo
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_27_ndeep_srl
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_27_axi_data_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v" into library axi_crossbar_v2_1_29
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_29_addr_arbiter_sasd
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_29_addr_arbiter
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_29_addr_decoder
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_29_arbiter_resp
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_29_crossbar_sasd
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_29_crossbar
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_29_decerr_slave
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_29_si_transactor
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_29_splitter
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_29_wdata_mux
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_29_wdata_router
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_29_axi_crossbar
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xbar_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_d_axi_i2s_audio_0_0/src/fifo_32/sim/fifo_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_d_axi_i2s_audio_0_0/src/fifo_4/sim/fifo_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_xbar_1/sim/design_1_xbar_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xbar_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-311] analyzing module design_1_axi_interconnect_0_0
+INFO: [VRFC 10-311] analyzing module design_1_microblaze_0_axi_periph_0
+INFO: [VRFC 10-311] analyzing module m00_couplers_imp_1CA5Z32
+INFO: [VRFC 10-311] analyzing module m00_couplers_imp_8RVYHO
+INFO: [VRFC 10-311] analyzing module m01_couplers_imp_1UTB3Y5
+INFO: [VRFC 10-311] analyzing module m02_couplers_imp_7ANRHB
+INFO: [VRFC 10-311] analyzing module m03_couplers_imp_1W07O72
+INFO: [VRFC 10-311] analyzing module m04_couplers_imp_5LX7BU
+INFO: [VRFC 10-311] analyzing module m05_couplers_imp_1XR4ZAZ
+INFO: [VRFC 10-311] analyzing module microblaze_0_local_memory_imp_1K0VQXK
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_1RZP34U
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_O7FAN0
+INFO: [VRFC 10-311] analyzing module s01_couplers_imp_1F69D31
+INFO: [VRFC 10-311] analyzing module s02_couplers_imp_N071UN
+INFO: [VRFC 10-311] analyzing module s03_couplers_imp_1GN6L8E
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.srcs/sources_1/imports/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj design_1_wrapper_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" into library axi_lite_ipif_v3_0_4
+INFO: [VRFC 10-3107] analyzing entity 'pselect_f'
+INFO: [VRFC 10-3107] analyzing entity 'address_decoder'
+INFO: [VRFC 10-3107] analyzing entity 'slave_attachment'
+INFO: [VRFC 10-3107] analyzing entity 'axi_lite_ipif'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/802b/hdl/axi_intc_v4_1_vh_rfs.vhd" into library axi_intc_v4_1_17
+INFO: [VRFC 10-3107] analyzing entity 'double_synchronizer'
+INFO: [VRFC 10-3107] analyzing entity 'shared_ram_ivar'
+INFO: [VRFC 10-3107] analyzing entity 'pulse_synchronizer'
+INFO: [VRFC 10-3107] analyzing entity 'intc_core'
+INFO: [VRFC 10-3107] analyzing entity 'axi_intc'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/sim/design_1_microblaze_0_axi_intc_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_microblaze_0_axi_intc_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/cd1d/hdl/lmb_v10_v3_0_vh_rfs.vhd" into library lmb_v10_v3_0_12
+INFO: [VRFC 10-3107] analyzing entity 'lmb_v10'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_dlmb_v10_0/sim/design_1_dlmb_v10_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_dlmb_v10_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_ilmb_v10_0/sim/design_1_ilmb_v10_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_ilmb_v10_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/b87e/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd" into library lmb_bram_if_cntlr_v4_0_22
+INFO: [VRFC 10-3107] analyzing entity 'MB_LUT6'
+INFO: [VRFC 10-3107] analyzing entity 'MB_MUXCY'
+INFO: [VRFC 10-3107] analyzing entity 'MB_XORCY'
+INFO: [VRFC 10-3107] analyzing entity 'MB_MUXF7'
+INFO: [VRFC 10-3107] analyzing entity 'MB_MUXF8'
+INFO: [VRFC 10-3107] analyzing entity 'MB_FDRE'
+INFO: [VRFC 10-3107] analyzing entity 'XOR18'
+INFO: [VRFC 10-3107] analyzing entity 'Parity'
+INFO: [VRFC 10-3107] analyzing entity 'ParityEnable'
+INFO: [VRFC 10-3107] analyzing entity 'checkbit_handler'
+INFO: [VRFC 10-3107] analyzing entity 'Correct_One_Bit'
+INFO: [VRFC 10-3107] analyzing entity 'Correct_One_Bit_64'
+INFO: [VRFC 10-3107] analyzing entity 'pselect_mask'
+INFO: [VRFC 10-3107] analyzing entity 'axi_interface'
+INFO: [VRFC 10-3107] analyzing entity 'round_robin_arbiter'
+INFO: [VRFC 10-3107] analyzing entity 'lmb_mux'
+INFO: [VRFC 10-3107] analyzing entity 'lmb_bram_if_cntlr'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/sim/design_1_dlmb_bram_if_cntlr_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_dlmb_bram_if_cntlr_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/sim/design_1_ilmb_bram_if_cntlr_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_ilmb_bram_if_cntlr_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" into library lib_cdc_v1_0_2
+INFO: [VRFC 10-3107] analyzing entity 'cdc_sync'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" into library proc_sys_reset_v5_0_13
+INFO: [VRFC 10-3107] analyzing entity 'upcnt_n'
+INFO: [VRFC 10-3107] analyzing entity 'sequence_psr'
+INFO: [VRFC 10-3107] analyzing entity 'lpf'
+INFO: [VRFC 10-3107] analyzing entity 'proc_sys_reset'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/sim/design_1_rst_clk_wiz_1_100M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_rst_clk_wiz_1_100M_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_rst_mig_7series_0_100M_0/sim/design_1_rst_mig_7series_0_100M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_rst_mig_7series_0_100M_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/0513/hdl/lib_pkg_v1_0_rfs.vhd" into library lib_pkg_v1_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/c97d/hdl/fifo_generator_v13_2_rfs.vhd" into library fifo_generator_v13_2_8
+INFO: [VRFC 10-3107] analyzing entity 'input_blk'
+INFO: [VRFC 10-3107] analyzing entity 'output_blk'
+INFO: [VRFC 10-3107] analyzing entity 'shft_wrapper'
+INFO: [VRFC 10-3107] analyzing entity 'shft_ram'
+INFO: [VRFC 10-3107] analyzing entity 'wr_pf_as'
+INFO: [VRFC 10-3107] analyzing entity 'wr_pf_ss'
+INFO: [VRFC 10-3107] analyzing entity 'rd_pe_as'
+INFO: [VRFC 10-3107] analyzing entity 'rd_pe_ss'
+INFO: [VRFC 10-3107] analyzing entity 'synchronizer_ff'
+INFO: [VRFC 10-3107] analyzing entity 'delay'
+INFO: [VRFC 10-3107] analyzing entity 'bin_cntr'
+INFO: [VRFC 10-3107] analyzing entity 'clk_x_pntrs_builtin'
+INFO: [VRFC 10-3107] analyzing entity 'logic_builtin'
+INFO: [VRFC 10-3107] analyzing entity 'builtin_prim'
+INFO: [VRFC 10-3107] analyzing entity 'builtin_extdepth'
+INFO: [VRFC 10-3107] analyzing entity 'builtin_top'
+INFO: [VRFC 10-3107] analyzing entity 'reset_builtin'
+INFO: [VRFC 10-3107] analyzing entity 'builtin_prim_v6'
+INFO: [VRFC 10-3107] analyzing entity 'builtin_extdepth_v6'
+INFO: [VRFC 10-3107] analyzing entity 'builtin_extdepth_low_latency'
+INFO: [VRFC 10-3107] analyzing entity 'builtin_top_v6'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_generator_v13_2_8_builtin'
+INFO: [VRFC 10-3107] analyzing entity 'bram_sync_reg'
+INFO: [VRFC 10-3107] analyzing entity 'bram_fifo_rstlogic'
+INFO: [VRFC 10-3107] analyzing entity 'reset_blk_ramfifo'
+INFO: [VRFC 10-3107] analyzing entity 'axi_reg_slice'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_generator_top'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_generator_v13_2_8_synth'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/3d41/hdl/lib_fifo_v1_0_rfs.vhd" into library lib_fifo_v1_0_17
+INFO: [VRFC 10-3107] analyzing entity 'async_fifo_fg'
+INFO: [VRFC 10-3107] analyzing entity 'sync_fifo_fg'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd" into library lib_srl_fifo_v1_0_2
+INFO: [VRFC 10-3107] analyzing entity 'cntr_incr_decr_addn_f'
+INFO: [VRFC 10-3107] analyzing entity 'dynshreg_f'
+INFO: [VRFC 10-3107] analyzing entity 'srl_fifo_rbu_f'
+INFO: [VRFC 10-3107] analyzing entity 'srl_fifo_f'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/e959/hdl/axi_datamover_v5_1_vh_rfs.vhd" into library axi_datamover_v5_1_30
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_reset'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_afifo_autord'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_sfifo_autord'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_fifo'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_cmd_status'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_scc'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_strb_gen2'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_pcc'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_addr_cntl'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_rdmux'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_rddata_cntl'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_rd_status_cntl'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_wr_demux'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_wrdata_cntl'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_wr_status_cntl'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_skid2mm_buf'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_skid_buf'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_rd_sf'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_wr_sf'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_stbs_set'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_stbs_set_nodre'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_ibttcc'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_indet_btt'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_dre_mux2_1_x_n'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_dre_mux4_1_x_n'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_dre_mux8_1_x_n'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_mm2s_dre'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_s2mm_dre'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_ms_strb_set'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_mssai_skid_buf'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_slice'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_s2mm_scatter'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_s2mm_realign'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_s2mm_basic_wrap'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_s2mm_omit_wrap'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_s2mm_full_wrap'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_mm2s_basic_wrap'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_mm2s_omit_wrap'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover_mm2s_full_wrap'
+INFO: [VRFC 10-3107] analyzing entity 'axi_datamover'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/85d0/hdl/axi_sg_v4_1_rfs.vhd" into library axi_sg_v4_1_16
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_reset'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_sfifo_autord'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_afifo_autord'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_fifo'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_cmd_status'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_rdmux'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_addr_cntl'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_rddata_cntl'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_rd_status_cntl'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_scc'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_wr_demux'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_scc_wr'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_skid2mm_buf'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_wrdata_cntl'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_wr_status_cntl'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_skid_buf'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_mm2s_basic_wrap'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_s2mm_basic_wrap'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_datamover'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_ftch_sm'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_ftch_pntr'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_ftch_cmdsts_if'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_ftch_mngr'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_cntrl_strm'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_ftch_queue'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_ftch_noqueue'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_ftch_q_mngr'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_updt_cmdsts_if'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_updt_sm'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_updt_mngr'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_updt_queue'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_updt_noqueue'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_updt_q_mngr'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg_intrpt'
+INFO: [VRFC 10-3107] analyzing entity 'axi_sg'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/50c3/hdl/axi_dma_v7_1_vh_rfs.vhd" into library axi_dma_v7_1_29
+INFO: [VRFC 10-3107] analyzing entity 'axi_dma_reset'
+INFO: [VRFC 10-3107] analyzing entity 'axi_dma_rst_module'
+INFO: [VRFC 10-3107] analyzing entity 'axi_dma_lite_if'
+INFO: [VRFC 10-3107] analyzing entity 'axi_dma_register'
+INFO: [VRFC 10-3107] analyzing entity 'axi_dma_register_s2mm'
+INFO: [VRFC 10-3107] analyzing entity 'axi_dma_reg_module'
+INFO: [VRFC 10-3107] analyzing entity 'axi_dma_skid_buf'
+INFO: [VRFC 10-3107] analyzing entity 'axi_dma_afifo_autord'
+INFO: [VRFC 10-3107] analyzing entity 'axi_dma_s2mm'
+INFO: [VRFC 10-3107] analyzing entity 'axi_dma_sofeof_gen'
+INFO: [VRFC 10-3107] analyzing entity 'axi_dma_smple_sm'
+INFO: [VRFC 10-3107] analyzing entity 'axi_dma_mm2s_sg_if'
+INFO: [VRFC 10-3107] analyzing entity 'axi_dma_mm2s_sm'
+INFO: [VRFC 10-3107] analyzing entity 'axi_dma_mm2s_cmdsts_if'
+INFO: [VRFC 10-3107] analyzing entity 'axi_dma_mm2s_sts_mngr'
+INFO: [VRFC 10-3107] analyzing entity 'axi_dma_mm2s_cntrl_strm'
+INFO: [VRFC 10-3107] analyzing entity 'axi_dma_mm2s_mngr'
+INFO: [VRFC 10-3107] analyzing entity 'axi_dma_s2mm_sg_if'
+INFO: [VRFC 10-3107] analyzing entity 'axi_dma_s2mm_sm'
+INFO: [VRFC 10-3107] analyzing entity 'axi_dma_s2mm_cmdsts_if'
+INFO: [VRFC 10-3107] analyzing entity 'axi_dma_s2mm_sts_mngr'
+INFO: [VRFC 10-3107] analyzing entity 'axi_dma_s2mm_sts_strm'
+INFO: [VRFC 10-3107] analyzing entity 'axi_dma_s2mm_mngr'
+INFO: [VRFC 10-3107] analyzing entity 'axi_dma_cmd_split'
+INFO: [VRFC 10-3107] analyzing entity 'axi_dma'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_axi_dma_0_0/sim/design_1_axi_dma_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_axi_dma_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/a040/hdl/interrupt_control_v3_1_vh_rfs.vhd" into library interrupt_control_v3_1_4
+INFO: [VRFC 10-3107] analyzing entity 'interrupt_control'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd" into library axi_gpio_v2_0_30
+INFO: [VRFC 10-3107] analyzing entity 'GPIO_Core'
+INFO: [VRFC 10-3107] analyzing entity 'axi_gpio'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_axi_gpio_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/06a7/hdl/axi_iic_v2_1_vh_rfs.vhd" into library axi_iic_v2_1_4
+INFO: [VRFC 10-3107] analyzing entity 'soft_reset'
+INFO: [VRFC 10-3107] analyzing entity 'SRL_FIFO'
+INFO: [VRFC 10-3107] analyzing entity 'upcnt_n'
+INFO: [VRFC 10-3107] analyzing entity 'shift8'
+INFO: [VRFC 10-3107] analyzing entity 'debounce'
+INFO: [VRFC 10-3107] analyzing entity 'reg_interface'
+INFO: [VRFC 10-3107] analyzing entity 'iic_control'
+INFO: [VRFC 10-3107] analyzing entity 'filter'
+INFO: [VRFC 10-3107] analyzing entity 'dynamic_master'
+INFO: [VRFC 10-3107] analyzing entity 'axi_ipif_ssp1'
+INFO: [VRFC 10-3107] analyzing entity 'iic'
+INFO: [VRFC 10-3107] analyzing entity 'axi_iic'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_axi_iic_0_0/sim/design_1_axi_iic_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_axi_iic_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/3dd9/hdl/axi_uartlite_v2_0_vh_rfs.vhd" into library axi_uartlite_v2_0_32
+INFO: [VRFC 10-3107] analyzing entity 'dynshreg_i_f'
+INFO: [VRFC 10-3107] analyzing entity 'uartlite_tx'
+INFO: [VRFC 10-3107] analyzing entity 'uartlite_rx'
+INFO: [VRFC 10-3107] analyzing entity 'baudrate'
+INFO: [VRFC 10-3107] analyzing entity 'uartlite_core'
+INFO: [VRFC 10-3107] analyzing entity 'axi_uartlite'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_axi_uartlite_0_0/sim/design_1_axi_uartlite_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_axi_uartlite_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ipshared/374c/src/rst_sync.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'rst_sync'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ipshared/374c/src/i2s_ctl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'i2s_ctl'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ipshared/374c/src/DCM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DCM'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ipshared/374c/src/Sync_ff.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Sync_ff'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ipshared/374c/src/i2s_stream.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'i2s_stream'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ipshared/374c/src/i2s_rx_tx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'i2s_rx_tx'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ipshared/374c/src/d_axi_i2s_audio_v2_0_AXI_L.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'd_axi_i2s_audio_v2_0_AXI_L'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ipshared/374c/src/d_axi_i2s_audio_v2_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'd_axi_i2s_audio_v2_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_d_axi_i2s_audio_0_0/sim/design_1_d_axi_i2s_audio_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_d_axi_i2s_audio_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/4e42/hdl/mdm_v3_2_vh_rfs.vhd" into library mdm_v3_2_24
+INFO: [VRFC 10-3107] analyzing entity 'xil_scan_reset_control'
+INFO: [VRFC 10-3107] analyzing entity 'MB_BSCANE2'
+INFO: [VRFC 10-3107] analyzing entity 'MB_BUFG'
+INFO: [VRFC 10-3107] analyzing entity 'MB_BUFGCE_1'
+INFO: [VRFC 10-3107] analyzing entity 'MB_BUFGCTRL'
+INFO: [VRFC 10-3107] analyzing entity 'MB_FDRE'
+INFO: [VRFC 10-3107] analyzing entity 'MB_PLLE2_BASE'
+INFO: [VRFC 10-3107] analyzing entity 'MB_FDC_1'
+INFO: [VRFC 10-3107] analyzing entity 'MB_FDRE_1'
+INFO: [VRFC 10-3107] analyzing entity 'MB_SRL16E'
+INFO: [VRFC 10-3107] analyzing entity 'MB_FDRSE'
+INFO: [VRFC 10-3107] analyzing entity 'MB_MUXCY_XORCY'
+INFO: [VRFC 10-3107] analyzing entity 'MB_MUXCY'
+INFO: [VRFC 10-3107] analyzing entity 'MB_XORCY'
+INFO: [VRFC 10-3107] analyzing entity 'MB_SRLC32E'
+INFO: [VRFC 10-3107] analyzing entity 'carry_and'
+INFO: [VRFC 10-3107] analyzing entity 'carry_or_vec'
+INFO: [VRFC 10-3107] analyzing entity 'carry_or'
+INFO: [VRFC 10-3107] analyzing entity 'select_bit'
+INFO: [VRFC 10-3107] analyzing entity 'MB_LUT1'
+INFO: [VRFC 10-3107] analyzing entity 'Arbiter'
+INFO: [VRFC 10-3107] analyzing entity 'SRL_FIFO'
+INFO: [VRFC 10-3107] analyzing entity 'bus_master'
+INFO: [VRFC 10-3107] analyzing entity 'JTAG_CONTROL'
+INFO: [VRFC 10-3107] analyzing entity 'MDM_Core'
+INFO: [VRFC 10-3107] analyzing entity 'MDM'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mdm_1_0/sim/design_1_mdm_1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_mdm_1_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/e224/hdl/microblaze_v11_0_vh_rfs.vhd" into library microblaze_v11_0_11
+INFO: [VRFC 10-3107] analyzing entity 'xil_scan_reset_control'
+INFO: [VRFC 10-3107] analyzing entity 'MB_SRL16E'
+INFO: [VRFC 10-3107] analyzing entity 'MB_SRLC16E'
+INFO: [VRFC 10-3107] analyzing entity 'MB_LUT1'
+INFO: [VRFC 10-3107] analyzing entity 'MB_LUT2'
+INFO: [VRFC 10-3107] analyzing entity 'MB_LUT3'
+INFO: [VRFC 10-3107] analyzing entity 'MB_LUT4'
+INFO: [VRFC 10-3107] analyzing entity 'MB_LUT5'
+INFO: [VRFC 10-3107] analyzing entity 'MB_LUT6'
+INFO: [VRFC 10-3107] analyzing entity 'MB_LUT6_2'
+INFO: [VRFC 10-3107] analyzing entity 'MB_MUXCY'
+INFO: [VRFC 10-3107] analyzing entity 'MB_XORCY'
+INFO: [VRFC 10-3107] analyzing entity 'MB_AND2B1L'
+INFO: [VRFC 10-3107] analyzing entity 'MB_OR2L'
+INFO: [VRFC 10-3107] analyzing entity 'MB_MUXF7'
+INFO: [VRFC 10-3107] analyzing entity 'MB_MUXF8'
+INFO: [VRFC 10-3107] analyzing entity 'MB_MUXF9'
+INFO: [VRFC 10-3107] analyzing entity 'MB_RAM32M'
+INFO: [VRFC 10-3107] analyzing entity 'MB_RAM16X1D'
+INFO: [VRFC 10-3107] analyzing entity 'MB_RAM32X1D'
+INFO: [VRFC 10-3107] analyzing entity 'MB_MULT18X18S'
+INFO: [VRFC 10-3107] analyzing entity 'MB_FD'
+INFO: [VRFC 10-3107] analyzing entity 'MB_FDR'
+INFO: [VRFC 10-3107] analyzing entity 'MB_FDRE'
+INFO: [VRFC 10-3107] analyzing entity 'MB_FDE'
+INFO: [VRFC 10-3107] analyzing entity 'MB_FDSE'
+INFO: [VRFC 10-3107] analyzing entity 'MB_FDS'
+INFO: [VRFC 10-3107] analyzing entity 'MB_FDRSE'
+INFO: [VRFC 10-3107] analyzing entity 'MB_MULT_AND'
+INFO: [VRFC 10-3107] analyzing entity 'MB_RAMB36'
+INFO: [VRFC 10-3107] analyzing entity 'MB_MUXCY_XORCY'
+INFO: [VRFC 10-3107] analyzing entity 'MB_DSP48E1'
+INFO: [VRFC 10-3107] analyzing entity 'mb_sync_bit'
+INFO: [VRFC 10-3107] analyzing entity 'mb_sync_vec'
+INFO: [VRFC 10-3107] analyzing entity 'mb_sync_reset'
+INFO: [VRFC 10-3107] analyzing entity 'OneHot_Buffer'
+INFO: [VRFC 10-3107] analyzing entity 'two_piperun_fd'
+INFO: [VRFC 10-3107] analyzing entity 'mux_bus'
+INFO: [VRFC 10-3107] analyzing entity 'Parity_Recursive_LUT6'
+INFO: [VRFC 10-3107] analyzing entity 'Parity'
+INFO: [VRFC 10-3107] analyzing entity 'comparator'
+INFO: [VRFC 10-3107] analyzing entity 'comparator_bool'
+INFO: [VRFC 10-3107] analyzing entity 'carry_and'
+INFO: [VRFC 10-3107] analyzing entity 'carry_and_bs'
+INFO: [VRFC 10-3107] analyzing entity 'carry_and_bb'
+INFO: [VRFC 10-3107] analyzing entity 'carry_and_n_bb'
+INFO: [VRFC 10-3107] analyzing entity 'carry_latch_and_bb'
+INFO: [VRFC 10-3107] analyzing entity 'carry_latch_and_n_bb'
+INFO: [VRFC 10-3107] analyzing entity 'carry_or'
+INFO: [VRFC 10-3107] analyzing entity 'carry_or_bs'
+INFO: [VRFC 10-3107] analyzing entity 'carry_or_bb'
+INFO: [VRFC 10-3107] analyzing entity 'carry_or_n_bb'
+INFO: [VRFC 10-3107] analyzing entity 'carry_equal'
+INFO: [VRFC 10-3107] analyzing entity 'carry_compare'
+INFO: [VRFC 10-3107] analyzing entity 'carry_compare_bool'
+INFO: [VRFC 10-3107] analyzing entity 'carry_compare_mask'
+INFO: [VRFC 10-3107] analyzing entity 'carry_compare_mask_bool'
+INFO: [VRFC 10-3107] analyzing entity 'carry_compare_const'
+INFO: [VRFC 10-3107] analyzing entity 'carry_compare_const_bool'
+INFO: [VRFC 10-3107] analyzing entity 'Carry_Compare_GE'
+INFO: [VRFC 10-3107] analyzing entity 'find_first_bit'
+INFO: [VRFC 10-3107] analyzing entity 'mux4_8'
+INFO: [VRFC 10-3107] analyzing entity 'mux4'
+INFO: [VRFC 10-3107] analyzing entity 'vec_mux'
+INFO: [VRFC 10-3107] analyzing entity 'srl_fifo'
+INFO: [VRFC 10-3107] analyzing entity 'ALU_Bit'
+INFO: [VRFC 10-3107] analyzing entity 'ALU'
+INFO: [VRFC 10-3107] analyzing entity 'MSR_Reg_Bit'
+INFO: [VRFC 10-3107] analyzing entity 'MSR_Reg'
+INFO: [VRFC 10-3107] analyzing entity 'msr_reg_gti'
+INFO: [VRFC 10-3107] analyzing entity 'MSR_Reg_ff'
+INFO: [VRFC 10-3107] analyzing entity 'dsp_module'
+INFO: [VRFC 10-3107] analyzing entity 'mul_unit'
+INFO: [VRFC 10-3107] analyzing entity 'mul_unit_ff'
+INFO: [VRFC 10-3107] analyzing entity 'Div_unit'
+INFO: [VRFC 10-3107] analyzing entity 'Div_unit_gti'
+INFO: [VRFC 10-3107] analyzing entity 'Div_Unit_ff'
+INFO: [VRFC 10-3107] analyzing entity 'Operand_Select_Bit'
+INFO: [VRFC 10-3107] analyzing entity 'Operand_Select'
+INFO: [VRFC 10-3107] analyzing entity 'Operand_Select_gti'
+INFO: [VRFC 10-3107] analyzing entity 'Operand_Select_ff'
+INFO: [VRFC 10-3107] analyzing entity 'PC_Bit'
+INFO: [VRFC 10-3107] analyzing entity 'PC_Module'
+INFO: [VRFC 10-3107] analyzing entity 'PC_Module_gti'
+INFO: [VRFC 10-3107] analyzing entity 'PC_Module_ff'
+INFO: [VRFC 10-3107] analyzing entity 'PreFetch_Buffer'
+INFO: [VRFC 10-3107] analyzing entity 'PreFetch_Buffer_gti'
+INFO: [VRFC 10-3107] analyzing entity 'PreFetch_Buffer_ff'
+INFO: [VRFC 10-3107] analyzing entity 'Register_File_Bit'
+INFO: [VRFC 10-3107] analyzing entity 'Register_File'
+INFO: [VRFC 10-3107] analyzing entity 'Register_File_gti'
+INFO: [VRFC 10-3107] analyzing entity 'count_leading_zeros'
+INFO: [VRFC 10-3107] analyzing entity 'Shift_Logic_Bit'
+INFO: [VRFC 10-3107] analyzing entity 'Shift_Logic_Module'
+INFO: [VRFC 10-3107] analyzing entity 'Shift_Logic_Module_gti'
+INFO: [VRFC 10-3107] analyzing entity 'Zero_Detect'
+INFO: [VRFC 10-3107] analyzing entity 'Zero_Detect_gti'
+INFO: [VRFC 10-3107] analyzing entity 'barrel_shift'
+INFO: [VRFC 10-3107] analyzing entity 'Barrel_Shifter_gti'
+INFO: [VRFC 10-3107] analyzing entity 'WB_Mux_Bit'
+INFO: [VRFC 10-3107] analyzing entity 'WB_Mux'
+INFO: [VRFC 10-3107] analyzing entity 'WB_Mux_ff'
+INFO: [VRFC 10-3107] analyzing entity 'Byte_Doublet_Handle'
+INFO: [VRFC 10-3107] analyzing entity 'Byte_Doublet_Handle_gti'
+INFO: [VRFC 10-3107] analyzing entity 'Byte_Doublet_Handle_ff'
+INFO: [VRFC 10-3107] analyzing entity 'Data_Flow_Logic'
+INFO: [VRFC 10-3107] analyzing entity 'Data_Flow_Logic_ff'
+INFO: [VRFC 10-3107] analyzing entity 'Streaming_AXI'
+INFO: [VRFC 10-3107] analyzing entity 'exception_registers'
+INFO: [VRFC 10-3107] analyzing entity 'exception_registers_gti'
+INFO: [VRFC 10-3107] analyzing entity 'exception_registers_ff'
+INFO: [VRFC 10-3107] analyzing entity 'FPU_ADDSUB'
+INFO: [VRFC 10-3107] analyzing entity 'FPU_DIV'
+INFO: [VRFC 10-3107] analyzing entity 'FPU_MUL'
+INFO: [VRFC 10-3107] analyzing entity 'fpu_conv'
+INFO: [VRFC 10-3107] analyzing entity 'fpu_sqrt'
+INFO: [VRFC 10-3107] analyzing entity 'FPU_DIV_FF'
+INFO: [VRFC 10-3107] analyzing entity 'FPU_MUL_ff'
+INFO: [VRFC 10-3107] analyzing entity 'fpu_conv_ff'
+INFO: [VRFC 10-3107] analyzing entity 'fpu_sqrt_ff'
+INFO: [VRFC 10-3107] analyzing entity 'Fpu'
+INFO: [VRFC 10-3107] analyzing entity 'Fpu_ff'
+INFO: [VRFC 10-3107] analyzing entity 'PVR'
+INFO: [VRFC 10-3107] analyzing entity 'Result_Mux_Bit'
+INFO: [VRFC 10-3107] analyzing entity 'Result_Mux'
+INFO: [VRFC 10-3107] analyzing entity 'stack_protection'
+INFO: [VRFC 10-3107] analyzing entity 'Data_Flow'
+INFO: [VRFC 10-3107] analyzing entity 'Data_Flow_gti'
+INFO: [VRFC 10-3107] analyzing entity 'Data_Flow_ff'
+INFO: [VRFC 10-3107] analyzing entity 'jump_logic'
+INFO: [VRFC 10-3107] analyzing entity 'Jump_Logic_ff'
+INFO: [VRFC 10-3107] analyzing entity 'Decode'
+INFO: [VRFC 10-3107] analyzing entity 'Decode_gti'
+INFO: [VRFC 10-3107] analyzing entity 'decode_conflict_ff'
+INFO: [VRFC 10-3107] analyzing entity 'decode_exception_flow_ff'
+INFO: [VRFC 10-3107] analyzing entity 'decode_instr_flow_ff'
+INFO: [VRFC 10-3107] analyzing entity 'decode_pipe_flow_ff'
+INFO: [VRFC 10-3107] analyzing entity 'Decode_ff'
+INFO: [VRFC 10-3107] analyzing entity 'address_hit'
+INFO: [VRFC 10-3107] analyzing entity 'address_data_hit'
+INFO: [VRFC 10-3107] analyzing entity 'Debug'
+INFO: [VRFC 10-3107] analyzing entity 'Debug_Profile'
+INFO: [VRFC 10-3107] analyzing entity 'debug_stat_counter'
+INFO: [VRFC 10-3107] analyzing entity 'Debug_Stat'
+INFO: [VRFC 10-3107] analyzing entity 'Debug_Trace'
+INFO: [VRFC 10-3107] analyzing entity 'DAXI_interface'
+INFO: [VRFC 10-3107] analyzing entity 'DAXI_interface_ff'
+INFO: [VRFC 10-3107] analyzing entity 'IAXI_Interface'
+INFO: [VRFC 10-3107] analyzing entity 'IAXI_Interface_ff'
+INFO: [VRFC 10-3107] analyzing entity 'DLMB_Interface_ff'
+INFO: [VRFC 10-3107] analyzing entity 'ILMB_Interface_ff'
+INFO: [VRFC 10-3107] analyzing entity 'RAM_Module'
+INFO: [VRFC 10-3107] analyzing entity 'LRU_Module'
+INFO: [VRFC 10-3107] analyzing entity 'victim_cache'
+INFO: [VRFC 10-3107] analyzing entity 'victim_cache_ff'
+INFO: [VRFC 10-3107] analyzing entity 'stream_cache'
+INFO: [VRFC 10-3107] analyzing entity 'stream_cache_ff'
+INFO: [VRFC 10-3107] analyzing entity 'Cache_Interface'
+INFO: [VRFC 10-3107] analyzing entity 'Cache_Interface_ff'
+INFO: [VRFC 10-3107] analyzing entity 'Icache'
+INFO: [VRFC 10-3107] analyzing entity 'DCache'
+INFO: [VRFC 10-3107] analyzing entity 'DCache_gti'
+INFO: [VRFC 10-3107] analyzing entity 'carry_hit'
+INFO: [VRFC 10-3107] analyzing entity 'Cache_ff'
+INFO: [VRFC 10-3107] analyzing entity 'cache_valid_bit_detect'
+INFO: [VRFC 10-3107] analyzing entity 'cachehit_detect'
+INFO: [VRFC 10-3107] analyzing entity 'DCache_wb'
+INFO: [VRFC 10-3107] analyzing entity 'instr_mux'
+INFO: [VRFC 10-3107] analyzing entity 'Instr_Mux_ff'
+INFO: [VRFC 10-3107] analyzing entity 'read_data_mux'
+INFO: [VRFC 10-3107] analyzing entity 'Read_Data_Mux_ff'
+INFO: [VRFC 10-3107] analyzing entity 'ISide_Logic_ff'
+INFO: [VRFC 10-3107] analyzing entity 'DSide_Logic_ff'
+INFO: [VRFC 10-3107] analyzing entity 'interrupt_mode_converter'
+INFO: [VRFC 10-3107] analyzing entity 'MMU_TLB'
+INFO: [VRFC 10-3107] analyzing entity 'MMU_UTLB_RAM'
+INFO: [VRFC 10-3107] analyzing entity 'MMU_UTLB'
+INFO: [VRFC 10-3107] analyzing entity 'MMU'
+INFO: [VRFC 10-3107] analyzing entity 'MMU_ff'
+INFO: [VRFC 10-3107] analyzing entity 'MicroBlaze_Area'
+INFO: [VRFC 10-3107] analyzing entity 'MicroBlaze_GTi'
+INFO: [VRFC 10-3107] analyzing entity 'MicroBlaze_FF'
+INFO: [VRFC 10-3107] analyzing entity 'MicroBlaze_Core'
+INFO: [VRFC 10-3107] analyzing entity 'MicroBlaze'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_microblaze_0_0/sim/design_1_microblaze_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_microblaze_0_0'
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:41 . Memory (MB): peak = 2117.898 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '41' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L axi_lite_ipif_v3_0_4 -L axi_intc_v4_1_17 -L lmb_v10_v3_0_12 -L lmb_bram_if_cntlr_v4_0_22 -L blk_mem_gen_v8_4_6 -L xlconcat_v2_1_4 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lib_pkg_v1_0_2 -L fifo_generator_v13_2_8 -L lib_fifo_v1_0_17 -L lib_srl_fifo_v1_0_2 -L axi_datamover_v5_1_30 -L axi_sg_v4_1_16 -L axi_dma_v7_1_29 -L interrupt_control_v3_1_4 -L axi_gpio_v2_0_30 -L axi_iic_v2_1_4 -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_28 -L axi_data_fifo_v2_1_27 -L axi_crossbar_v2_1_29 -L axi_uartlite_v2_0_32 -L mdm_v3_2_24 -L microblaze_v11_0_11 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_1_wrapper_behav xil_defaultlib.design_1_wrapper xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L axi_lite_ipif_v3_0_4 -L axi_intc_v4_1_17 -L lmb_v10_v3_0_12 -L lmb_bram_if_cntlr_v4_0_22 -L blk_mem_gen_v8_4_6 -L xlconcat_v2_1_4 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lib_pkg_v1_0_2 -L fifo_generator_v13_2_8 -L lib_fifo_v1_0_17 -L lib_srl_fifo_v1_0_2 -L axi_datamover_v5_1_30 -L axi_sg_v4_1_16 -L axi_dma_v7_1_29 -L interrupt_control_v3_1_4 -L axi_gpio_v2_0_30 -L axi_iic_v2_1_4 -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_28 -L axi_data_fifo_v2_1_27 -L axi_crossbar_v2_1_29 -L axi_uartlite_v2_0_32 -L mdm_v3_2_24 -L microblaze_v11_0_11 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_1_wrapper_behav xil_defaultlib.design_1_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 's_axi_arready' [C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/sim/design_1.v:2280]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 's_axi_bid' [C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/sim/design_1.v:2294]
+WARNING: [VRFC 10-3091] actual bit length 96 differs from formal bit length 128 for port 's_axi_rdata' [C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/sim/design_1.v:2298]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 's_axi_rid' [C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/sim/design_1.v:2299]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 's_axi_rlast' [C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/sim/design_1.v:2300]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 8 for port 's_axi_rresp' [C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/sim/design_1.v:2302]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 's_axi_rvalid' [C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/sim/design_1.v:2303]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 18 for port 'm_axi_arprot' [C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/sim/design_1.v:3274]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 18 for port 'm_axi_awprot' [C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/sim/design_1.v:3278]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 4 for port 'pi_dqs_found_lanes' [C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1671]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 4 for port 'pi_phase_locked_lanes' [C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1679]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 4 for port 'pi_dqs_found_lanes' [C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_top.v:1340]
+WARNING: [VRFC 10-5021] port 'mm2s_prmry_reset_out_n' is not connected on this instance [C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/sim/design_1.v:452]
+WARNING: [VRFC 10-5021] port 'gpo' is not connected on this instance [C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/sim/design_1.v:536]
+WARNING: [VRFC 10-5021] port 'interrupt' is not connected on this instance [C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/sim/design_1.v:716]
+WARNING: [VRFC 10-5021] port 'peripheral_reset' is not connected on this instance [C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/sim/design_1.v:1173]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/sim/design_1.v:1183]
+WARNING: [VRFC 10-5021] port 'aclk2x' is not connected on this instance [C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:3103]
+WARNING: [VRFC 10-5021] port 'lmb_rst' is not connected on this instance [C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/sim/design_1.v:4530]
+WARNING: [VRFC 10-5021] port 'lmb_rst' is not connected on this instance [C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/sim/design_1.v:4576]
+WARNING: [VRFC 10-5021] port 'complex_oclk_prech_req' is not connected on this instance [C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:1318]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1fs
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package lib_pkg_v1_0_2.lib_pkg
+Compiling package axi_dma_v7_1_29.axi_dma_pkg
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package xpm.vcomponents
+Compiling package axi_lite_ipif_v3_0_4.ipif_pkg
+Compiling package axi_iic_v2_1_4.iic_pkg
+Compiling package ieee.std_logic_signed
+Compiling package mdm_v3_2_24.mdm_funcs
+Compiling package microblaze_v11_0_11.microblaze_types
+Compiling package microblaze_v11_0_11.microblaze_isa
+Compiling package ieee.std_logic_textio
+Compiling package microblaze_v11_0_11.mmu_types
+Compiling package ieee.math_real
+Compiling package lmb_bram_if_cntlr_v4_0_22.lmb_bram_if_funcs
+Compiling architecture implementation of entity axi_dma_v7_1_29.axi_dma_smple_sm [\axi_dma_smple_sm(c_sg_length_wi...]
+Compiling architecture implementation of entity axi_dma_v7_1_29.axi_dma_mm2s_cmdsts_if [\axi_dma_mm2s_cmdsts_if(c_extra=...]
+Compiling architecture implementation of entity axi_dma_v7_1_29.axi_dma_mm2s_sts_mngr [axi_dma_mm2s_sts_mngr_default]
+Compiling architecture implementation of entity axi_dma_v7_1_29.axi_dma_mm2s_mngr [\axi_dma_mm2s_mngr(c_prmy_cmdfif...]
+Compiling architecture implementation of entity axi_dma_v7_1_29.axi_dma_sofeof_gen [axi_dma_sofeof_gen_default]
+Compiling architecture implementation of entity axi_dma_v7_1_29.axi_dma_s2mm_cmdsts_if [\axi_dma_s2mm_cmdsts_if(c_dm_sta...]
+Compiling architecture implementation of entity axi_dma_v7_1_29.axi_dma_s2mm_sts_mngr [axi_dma_s2mm_sts_mngr_default]
+Compiling architecture implementation of entity axi_dma_v7_1_29.axi_dma_s2mm_mngr [\axi_dma_s2mm_mngr(c_prmy_cmdfif...]
+Compiling architecture implementation of entity axi_dma_v7_1_29.axi_dma_reset [\axi_dma_reset(c_include_sg=0,c_...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_mtbf_stages=4)\]
+Compiling architecture implementation of entity axi_dma_v7_1_29.axi_dma_rst_module [\axi_dma_rst_module(c_include_sg...]
+Compiling architecture implementation of entity axi_dma_v7_1_29.axi_dma_lite_if [\axi_dma_lite_if(c_num_ce=23,c_s...]
+Compiling architecture implementation of entity axi_dma_v7_1_29.axi_dma_register [\axi_dma_register(c_num_register...]
+Compiling architecture implementation of entity axi_dma_v7_1_29.axi_dma_register_s2mm [\axi_dma_register_s2mm(c_num_reg...]
+Compiling architecture implementation of entity axi_dma_v7_1_29.axi_dma_reg_module [\axi_dma_reg_module(c_include_sg...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=4,c_dwidth=8...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=8,c_dep...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=8,c_depth=4...]
+Compiling architecture imp of entity axi_datamover_v5_1_30.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=8,c...]
+Compiling module xpm.xpm_fifo_rst_default
+Compiling module xpm.xpm_fifo_reg_bit
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=1...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=1...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=1...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=1...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=2...
+Compiling module xpm.xpm_fifo_base(FIFO_MEMORY_TYPE=2...
+Compiling module xpm.xpm_fifo_sync(FIFO_MEMORY_TYPE="...
+Compiling architecture implementation of entity lib_fifo_v1_0_17.sync_fifo_fg [\sync_fifo_fg(c_family="artix7",...]
+Compiling architecture imp of entity axi_datamover_v5_1_30.axi_datamover_sfifo_autord [\axi_datamover_sfifo_autord(c_dw...]
+Compiling architecture implementation of entity axi_datamover_v5_1_30.axi_datamover_rd_sf [\axi_datamover_rd_sf(c_sf_fifo_d...]
+Compiling architecture implementation of entity axi_datamover_v5_1_30.axi_datamover_skid_buf [axi_datamover_skid_buf_default]
+Compiling architecture implementation of entity axi_datamover_v5_1_30.axi_datamover_reset [axi_datamover_reset_default]
+Compiling architecture imp of entity axi_datamover_v5_1_30.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=8,c...]
+Compiling architecture imp of entity axi_datamover_v5_1_30.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=71,...]
+Compiling architecture implementation of entity axi_datamover_v5_1_30.axi_datamover_cmd_status [\axi_datamover_cmd_status(c_stsc...]
+Compiling architecture implementation of entity axi_datamover_v5_1_30.axi_datamover_rd_status_cntl [axi_datamover_rd_status_cntl_def...]
+Compiling architecture implementation of entity axi_datamover_v5_1_30.axi_datamover_strb_gen2 [\axi_datamover_strb_gen2(c_strb_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_30.axi_datamover_strb_gen2 [\axi_datamover_strb_gen2(c_op_mo...]
+Compiling architecture implementation of entity axi_datamover_v5_1_30.axi_datamover_pcc [\axi_datamover_pcc(c_is_mm2s=1,c...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.cntr_incr_decr_addn_f [\cntr_incr_decr_addn_f(c_size=3,...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=4,c_dwidth=5...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=59,c_de...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=59,c_depth=...]
+Compiling architecture imp of entity axi_datamover_v5_1_30.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=59,...]
+Compiling architecture implementation of entity axi_datamover_v5_1_30.axi_datamover_addr_cntl [\axi_datamover_addr_cntl(c_famil...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=4,c_dwidth=2...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=29,c_de...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=29,c_depth=...]
+Compiling architecture imp of entity axi_datamover_v5_1_30.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=29,...]
+Compiling architecture implementation of entity axi_datamover_v5_1_30.axi_datamover_rdmux [\axi_datamover_rdmux(c_sel_addr_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_30.axi_datamover_rddata_cntl [\axi_datamover_rddata_cntl(c_ali...]
+Compiling architecture implementation of entity axi_datamover_v5_1_30.axi_datamover_mm2s_full_wrap [\axi_datamover_mm2s_full_wrap(c_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_30.axi_datamover_ibttcc [\axi_datamover_ibttcc(c_sf_xfer_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_30.axi_datamover_ms_strb_set [\axi_datamover_ms_strb_set(c_str...]
+Compiling architecture implementation of entity axi_datamover_v5_1_30.axi_datamover_mssai_skid_buf [axi_datamover_mssai_skid_buf_def...]
+Compiling architecture working of entity axi_datamover_v5_1_30.axi_datamover_slice [\axi_datamover_slice(c_data_widt...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.cntr_incr_decr_addn_f [\cntr_incr_decr_addn_f(c_size=5,...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=16,c_dwidth=...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=9,c_fam...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=9,c_family=...]
+Compiling architecture imp of entity axi_datamover_v5_1_30.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=9,c...]
+Compiling architecture implementation of entity axi_datamover_v5_1_30.axi_datamover_s2mm_scatter [\axi_datamover_s2mm_scatter(c_en...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=4,c_dwidth=3...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=34,c_de...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=34,c_depth=...]
+Compiling architecture imp of entity axi_datamover_v5_1_30.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=34,...]
+Compiling architecture implementation of entity axi_datamover_v5_1_30.axi_datamover_s2mm_realign [\axi_datamover_s2mm_realign(c_en...]
+Compiling architecture implementation of entity axi_datamover_v5_1_30.axi_datamover_stbs_set_nodre [\axi_datamover_stbs_set_nodre(c_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_30.axi_datamover_skid_buf [\axi_datamover_skid_buf(c_wdata_...]
+Compiling module xpm.xpm_fifo_rst_default_1
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=5...
+Compiling module xpm.xpm_counter_updn(RESET_VALUE=1)
+Compiling module xpm.xpm_counter_updn(RESET_VALUE=2)
+Compiling module xpm.xpm_counter_updn(RESET_VALUE=3)
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_fifo_base(FIFO_WRITE_DEPTH=1...
+Compiling module xpm.xpm_fifo_sync(FIFO_MEMORY_TYPE="...
+Compiling architecture implementation of entity lib_fifo_v1_0_17.sync_fifo_fg [\sync_fifo_fg(c_family="artix7",...]
+Compiling architecture imp of entity axi_datamover_v5_1_30.axi_datamover_sfifo_autord [\axi_datamover_sfifo_autord(c_dw...]
+Compiling module xpm.xpm_fifo_rst_default_2
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_fifo_base(FIFO_MEMORY_TYPE=2...
+Compiling module xpm.xpm_fifo_sync(FIFO_MEMORY_TYPE="...
+Compiling architecture implementation of entity lib_fifo_v1_0_17.sync_fifo_fg [\sync_fifo_fg(c_family="artix7",...]
+Compiling architecture imp of entity axi_datamover_v5_1_30.axi_datamover_sfifo_autord [\axi_datamover_sfifo_autord(c_dw...]
+Compiling architecture implementation of entity axi_datamover_v5_1_30.axi_datamover_indet_btt [\axi_datamover_indet_btt(c_sf_fi...]
+Compiling architecture imp of entity axi_datamover_v5_1_30.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=35,...]
+Compiling architecture implementation of entity axi_datamover_v5_1_30.axi_datamover_cmd_status [\axi_datamover_cmd_status(c_stsc...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=6,c_dwidth=3...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=30,c_de...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=30,c_depth=...]
+Compiling architecture imp of entity axi_datamover_v5_1_30.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=30,...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.cntr_incr_decr_addn_f [\cntr_incr_decr_addn_f(c_size=4,...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=6,c_dwidth=2...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=2,c_dep...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=2,c_depth=6...]
+Compiling architecture imp of entity axi_datamover_v5_1_30.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=2,c...]
+Compiling architecture implementation of entity axi_datamover_v5_1_30.axi_datamover_wr_status_cntl [\axi_datamover_wr_status_cntl(c_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_30.axi_datamover_addr_cntl [\axi_datamover_addr_cntl(c_addr_...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=4,c_dwidth=2...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=27,c_de...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=27,c_depth=...]
+Compiling architecture imp of entity axi_datamover_v5_1_30.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=27,...]
+Compiling architecture implementation of entity axi_datamover_v5_1_30.axi_datamover_wrdata_cntl [\axi_datamover_wrdata_cntl(c_rea...]
+Compiling architecture implementation of entity axi_datamover_v5_1_30.axi_datamover_wr_demux [\axi_datamover_wr_demux(c_sel_ad...]
+Compiling architecture implementation of entity axi_datamover_v5_1_30.axi_datamover_skid2mm_buf [\axi_datamover_skid2mm_buf(c_add...]
+Compiling architecture implementation of entity axi_datamover_v5_1_30.axi_datamover_s2mm_full_wrap [\axi_datamover_s2mm_full_wrap(c_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_30.axi_datamover [\axi_datamover(c_include_mm2s=1,...]
+Compiling architecture implementation of entity axi_dma_v7_1_29.axi_dma [\axi_dma(c_include_sg=0,c_sg_inc...]
+Compiling architecture design_1_axi_dma_0_0_arch of entity xil_defaultlib.design_1_axi_dma_0_0 [design_1_axi_dma_0_0_default]
+Compiling architecture implementation of entity interrupt_control_v3_1_4.interrupt_control [\interrupt_control(c_num_ce=16,c...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=9,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=1,c_aw=9,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.address_decoder [\address_decoder(c_bus_awidth=9,...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.slave_attachment [\slave_attachment(c_ard_addr_ran...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.axi_lite_ipif [\axi_lite_ipif(c_s_axi_addr_widt...]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_single_bit=0,c_vecto...]
+Compiling architecture imp of entity axi_gpio_v2_0_30.GPIO_Core [\GPIO_Core(c_aw=9,c_gpio_width=5...]
+Compiling architecture imp of entity axi_gpio_v2_0_30.axi_gpio [\axi_gpio(c_family="artix7",c_gp...]
+Compiling architecture design_1_axi_gpio_0_0_arch of entity xil_defaultlib.design_1_axi_gpio_0_0 [design_1_axi_gpio_0_0_default]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=3,c_aw=9,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=7,c_aw=9,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.address_decoder [\address_decoder(c_bus_awidth=9,...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.slave_attachment [\slave_attachment(c_ard_addr_ran...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.axi_lite_ipif [\axi_lite_ipif(c_s_axi_addr_widt...]
+Compiling architecture implementation of entity interrupt_control_v3_1_4.interrupt_control [\interrupt_control(c_num_ce=16,c...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111111001010")(0...]
+Compiling architecture fdrse_v of entity unisim.FDRSE [fdrse_default]
+Compiling architecture implementation of entity axi_iic_v2_1_4.soft_reset [soft_reset_default]
+Compiling architecture rtl of entity axi_iic_v2_1_4.axi_ipif_ssp1 [\axi_ipif_ssp1(c_num_iic_regs=18...]
+Compiling architecture rtl of entity axi_iic_v2_1_4.reg_interface [\reg_interface(c_scl_inertial_de...]
+Compiling architecture rtl of entity axi_iic_v2_1_4.debounce [\debounce(c_inertial_delay=0)\]
+Compiling architecture rtl of entity axi_iic_v2_1_4.filter [\filter(scl_inertial_delay=0,sda...]
+Compiling architecture rtl of entity axi_iic_v2_1_4.upcnt_n [\upcnt_n(c_size=10)\]
+Compiling architecture rtl of entity axi_iic_v2_1_4.shift8 [shift8_default]
+Compiling architecture rtl of entity axi_iic_v2_1_4.upcnt_n [\upcnt_n(c_size=4)\]
+Compiling architecture rtl of entity axi_iic_v2_1_4.iic_control [\iic_control(c_scl_inertial_dela...]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture muxcy_l_v of entity unisim.MUXCY_L [muxcy_l_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(0,15)\]
+Compiling architecture imp of entity axi_iic_v2_1_4.SRL_FIFO [\SRL_FIFO(c_depth=4)\]
+Compiling architecture rtl of entity axi_iic_v2_1_4.dynamic_master [dynamic_master_default]
+Compiling architecture imp of entity axi_iic_v2_1_4.SRL_FIFO [\SRL_FIFO(c_data_bits=2,c_depth=...]
+Compiling architecture rtl of entity axi_iic_v2_1_4.iic [\iic(c_num_iic_regs=18,c_gpo_wid...]
+Compiling architecture rtl of entity axi_iic_v2_1_4.axi_iic [\axi_iic(c_family="artix7",c_s_a...]
+Compiling architecture design_1_axi_iic_0_0_arch of entity xil_defaultlib.design_1_axi_iic_0_0 [design_1_axi_iic_0_0_default]
+Compiling module xil_defaultlib.m00_couplers_imp_1CA5Z32
+Compiling module xil_defaultlib.s00_couplers_imp_O7FAN0
+Compiling module xil_defaultlib.s01_couplers_imp_1F69D31
+Compiling module xil_defaultlib.s02_couplers_imp_N071UN
+Compiling module xil_defaultlib.s03_couplers_imp_1GN6L8E
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_carry_...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_addr_decode...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module unisims_ver.SRLC32E_default
+Compiling module axi_data_fifo_v2_1_27.axi_data_fifo_v2_1_27_ndeep_srl(...
+Compiling module axi_data_fifo_v2_1_27.axi_data_fifo_v2_1_27_axic_srl_f...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_si_transact...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_data_fifo_v2_1_27.axi_data_fifo_v2_1_27_ndeep_srl(...
+Compiling module axi_data_fifo_v2_1_27.axi_data_fifo_v2_1_27_axic_srl_f...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_si_transact...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_splitter
+Compiling module axi_data_fifo_v2_1_27.axi_data_fifo_v2_1_27_ndeep_srl(...
+Compiling module axi_data_fifo_v2_1_27.axi_data_fifo_v2_1_27_axic_reg_s...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_wdata_route...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_si_transact...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_si_transact...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_si_transact...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_addr_decode...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_addr_decode...
+Compiling module axi_data_fifo_v2_1_27.axi_data_fifo_v2_1_27_axic_reg_s...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_wdata_mux(C...
+Compiling module axi_data_fifo_v2_1_27.axi_data_fifo_v2_1_27_axic_srl_f...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_axi2ve...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_vector...
+Compiling module axi_register_slice_v2_1_28.axi_register_slice_v2_1_28_axic_...
+Compiling module axi_register_slice_v2_1_28.axi_register_slice_v2_1_28_axic_...
+Compiling module axi_register_slice_v2_1_28.axi_register_slice_v2_1_28_axic_...
+Compiling module axi_register_slice_v2_1_28.axi_register_slice_v2_1_28_axic_...
+Compiling module axi_register_slice_v2_1_28.axi_register_slice_v2_1_28_axi_r...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_addr_decode...
+Compiling module axi_data_fifo_v2_1_27.axi_data_fifo_v2_1_27_axic_reg_s...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_wdata_mux(C...
+Compiling module axi_data_fifo_v2_1_27.axi_data_fifo_v2_1_27_axic_srl_f...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_addr_arbite...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_decerr_slav...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_crossbar(C_...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_axi_crossba...
+Compiling module xil_defaultlib.design_1_xbar_0
+Compiling module xil_defaultlib.design_1_axi_interconnect_0_0
+Compiling architecture rtl of entity axi_uartlite_v2_0_32.baudrate [\baudrate(c_ratio=54)\]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=16,c_dwidth=...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=8,c_fam...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=8,c_family=...]
+Compiling architecture rtl of entity axi_uartlite_v2_0_32.uartlite_rx [\uartlite_rx(c_family="artix7")(...]
+Compiling architecture rtl of entity axi_uartlite_v2_0_32.uartlite_tx [\uartlite_tx(c_family="artix7")(...]
+Compiling architecture rtl of entity axi_uartlite_v2_0_32.uartlite_core [\uartlite_core(c_family="artix7"...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.address_decoder [\address_decoder(c_bus_awidth=4,...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.slave_attachment [\slave_attachment(c_ard_addr_ran...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.axi_lite_ipif [\axi_lite_ipif(c_s_axi_addr_widt...]
+Compiling architecture rtl of entity axi_uartlite_v2_0_32.axi_uartlite [\axi_uartlite(c_family="artix7",...]
+Compiling architecture design_1_axi_uartlite_0_0_arch of entity xil_defaultlib.design_1_axi_uartlite_0_0 [design_1_axi_uartlite_0_0_defaul...]
+Compiling architecture behavioral of entity xil_defaultlib.i2s_ctl [i2s_ctl_default]
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_sync_stag...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_bhv_ver_a...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_CONV_VER(...
+Compiling module fifo_generator_v13_2_8.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module xil_defaultlib.fifo_4
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_sync_stag...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_bhv_ver_a...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_CONV_VER(...
+Compiling module fifo_generator_v13_2_8.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module xil_defaultlib.fifo_32
+Compiling architecture plle2_adv_v of entity unisim.PLLE2_ADV [\PLLE2_ADV(clkfbout_mult=51,clki...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture xilinx of entity xil_defaultlib.DCM [dcm_default]
+Compiling architecture behavioral of entity xil_defaultlib.Sync_ff [sync_ff_default]
+Compiling architecture fdpe_v of entity unisim.FDPE [\FDPE(init='0')\]
+Compiling architecture behavioral of entity xil_defaultlib.rst_sync [rst_sync_default]
+Compiling architecture oddr_v of entity unisim.ODDR [\ODDR(1,13)(1,4)\]
+Compiling architecture behavioral of entity xil_defaultlib.i2s_rx_tx [i2s_rx_tx_default]
+Compiling architecture behavioral of entity xil_defaultlib.i2s_stream [i2s_stream_default]
+Compiling architecture arch_imp of entity xil_defaultlib.d_axi_i2s_audio_v2_0_AXI_L [d_axi_i2s_audio_v2_0_axi_l_defau...]
+Compiling architecture arch_imp of entity xil_defaultlib.d_axi_i2s_audio_v2_0 [d_axi_i2s_audio_v2_0_default]
+Compiling architecture design_1_d_axi_i2s_audio_0_0_arch of entity xil_defaultlib.design_1_d_axi_i2s_audio_0_0 [design_1_d_axi_i2s_audio_0_0_def...]
+Compiling architecture bscane2_v of entity unisim.BSCANE2 [\BSCANE2(jtag_chain=2)(1,5)\]
+Compiling architecture imp of entity mdm_v3_2_24.MB_BSCANE2 [\MB_BSCANE2(c_target=artix7,jtag...]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="10")(0,1)\]
+Compiling architecture imp of entity mdm_v3_2_24.MB_LUT1 [\MB_LUT1(c_target=artix7,init="1...]
+Compiling architecture bufgctrl_v of entity unisim.BUFGCTRL [\BUFGCTRL(init_out=1,preselect_i...]
+Compiling architecture bufgce_1_v of entity unisim.BUFGCE_1 [\BUFGCE_1(1,10)\]
+Compiling architecture imp of entity mdm_v3_2_24.MB_BUFGCE_1 [\MB_BUFGCE_1(c_target=artix7)\]
+Compiling architecture imp of entity mdm_v3_2_24.xil_scan_reset_control [xil_scan_reset_control_default]
+Compiling architecture fdce_v of entity unisim.FDCE [fdce_default]
+Compiling architecture fdc_1_v of entity unisim.FDC_1 [fdc_1_default]
+Compiling architecture imp of entity mdm_v3_2_24.MB_FDC_1 [\MB_FDC_1(c_target=artix7)\]
+Compiling architecture fdre_1_v of entity unisim.FDRE_1 [fdre_1_default]
+Compiling architecture imp of entity mdm_v3_2_24.MB_FDRE_1 [\MB_FDRE_1(c_target=artix7)\]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="0000000101100111")...]
+Compiling architecture imp of entity mdm_v3_2_24.MB_SRL16E [\MB_SRL16E(c_target=artix7,c_sta...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="0100001010000111")...]
+Compiling architecture imp of entity mdm_v3_2_24.MB_SRL16E [\MB_SRL16E(c_target=artix7,c_sta...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="0100010001000011")...]
+Compiling architecture imp of entity mdm_v3_2_24.MB_SRL16E [\MB_SRL16E(c_target=artix7,c_sta...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="0101100001001101")...]
+Compiling architecture imp of entity mdm_v3_2_24.MB_SRL16E [\MB_SRL16E(c_target=artix7,c_sta...]
+Compiling architecture imp of entity mdm_v3_2_24.JTAG_CONTROL [\JTAG_CONTROL(c_target=artix7,c_...]
+Compiling architecture imp of entity mdm_v3_2_24.MDM_Core [\MDM_Core(c_target=artix7,c_jtag...]
+Compiling architecture imp of entity mdm_v3_2_24.MDM [\MDM(c_family="artix7",c_device=...]
+Compiling architecture design_1_mdm_1_0_arch of entity xil_defaultlib.design_1_mdm_1_0 [design_1_mdm_1_0_default]
+Compiling architecture imp of entity microblaze_v11_0_11.mb_sync_bit [mb_sync_bit_default]
+Compiling architecture imp of entity microblaze_v11_0_11.DAXI_interface [\DAXI_interface(c_data_size=32,c...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10101010101011000000...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_LUT5 [\MB_LUT5(c_target=artix7,init="1...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111111101100")(0...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_LUT4 [\MB_LUT4(c_target=artix7,init="1...]
+Compiling architecture ram32x1d_v of entity unisim.RAM32X1D [ram32x1d_default]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_RAM32X1D [\MB_RAM32X1D(c_target=artix7,c_u...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_RAM16X1D [\MB_RAM16X1D(c_target=artix7,c_u...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010111100001100...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_LUT6 [\MB_LUT6(c_target=artix7,init="1...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010000011111100...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_LUT6 [\MB_LUT6(c_target=artix7,init="1...]
+Compiling architecture imp of entity microblaze_v11_0_11.Cache_Interface [\Cache_Interface(c_target=artix7...]
+Compiling architecture imp of entity microblaze_v11_0_11.comparator [\comparator(c_target=artix7,c_is...]
+Compiling architecture imp of entity microblaze_v11_0_11.cache_valid_bit_detect [\cache_valid_bit_detect(c_addr_s...]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(init_a="0000...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(read_width_a=36,read_w...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_RAMB36 [\MB_RAMB36(c_target=artix7,c_use...]
+Compiling architecture imp of entity microblaze_v11_0_11.RAM_Module [\RAM_Module(c_id=300,c_target=ar...]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(init_a="0000...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(read_width_a=18,read_w...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_RAMB36 [\MB_RAMB36(c_target=artix7,c_use...]
+Compiling architecture imp of entity microblaze_v11_0_11.RAM_Module [\RAM_Module(c_id=400,c_target=ar...]
+Compiling architecture imp of entity microblaze_v11_0_11.DCache_gti [\DCache_gti(c_target=artix7,c_us...]
+Compiling architecture imp of entity microblaze_v11_0_11.comparator [\comparator(c_target=artix7,c_is...]
+Compiling architecture imp of entity microblaze_v11_0_11.RAM_Module [\RAM_Module(c_id=1200,c_target=a...]
+Compiling architecture imp of entity microblaze_v11_0_11.RAM_Module [\RAM_Module(c_id=1300,c_target=a...]
+Compiling architecture imp of entity microblaze_v11_0_11.Cache_Interface [\Cache_Interface(c_target=artix7...]
+Compiling architecture imp of entity microblaze_v11_0_11.Icache [\Icache(c_target=artix7,c_use_co...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_SRL16E [\MB_SRL16E(c_target=artix7,c_use...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1001111111111111")...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_SRL16E [\MB_SRL16E(c_target=artix7,c_use...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(15,0)\]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_SRL16E [\MB_SRL16E(c_target=artix7,c_use...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1000000000000000")...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_SRL16E [\MB_SRL16E(c_target=artix7,c_use...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1000100000101011")...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_SRL16E [\MB_SRL16E(c_target=artix7,c_use...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="0000001111011000")...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_SRL16E [\MB_SRL16E(c_target=artix7,c_use...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="0000000001100100")...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_SRL16E [\MB_SRL16E(c_target=artix7,c_use...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="0010010100000000")...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_SRL16E [\MB_SRL16E(c_target=artix7,c_use...]
+Compiling architecture imp of entity microblaze_v11_0_11.mb_sync_bit [\mb_sync_bit(c_levels=1,c_reset_...]
+Compiling architecture imp of entity microblaze_v11_0_11.mb_sync_vec [\mb_sync_vec(c_levels=1,c_reset_...]
+Compiling architecture imp of entity microblaze_v11_0_11.mb_sync_bit [\mb_sync_bit(c_levels=1)\]
+Compiling architecture imp of entity microblaze_v11_0_11.mb_sync_vec [\mb_sync_vec(c_width=10)\]
+Compiling architecture srlc16e_v of entity unisim.SRLC16E [\SRLC16E(0,15)\]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_SRLC16E [\MB_SRLC16E(c_target=artix7,c_us...]
+Compiling architecture imp of entity microblaze_v11_0_11.address_hit [\address_hit(c_target=artix7,c_u...]
+Compiling architecture imp of entity microblaze_v11_0_11.address_hit [\address_hit(c_target=artix7,c_u...]
+Compiling architecture imp of entity microblaze_v11_0_11.xil_scan_reset_control [xil_scan_reset_control_default]
+Compiling architecture imp of entity microblaze_v11_0_11.Debug [\Debug(c_data_size=32,c_instr_si...]
+Compiling architecture imp of entity microblaze_v11_0_11.interrupt_mode_converter [\interrupt_mode_converter(c_edge...]
+Compiling architecture and2b1l_v of entity unisim.AND2B1L [and2b1l_default]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_AND2B1L [\MB_AND2B1L(c_target=artix7)\]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_MUXCY [\MB_MUXCY(c_target=artix7)\]
+Compiling architecture imp of entity microblaze_v11_0_11.carry_or [\carry_or(c_target=artix7)\]
+Compiling architecture imp of entity microblaze_v11_0_11.carry_and [\carry_and(c_target=artix7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010000000010010000...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_LUT6 [\MB_LUT6(c_target=artix7,init="1...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010000000010010000...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_LUT6 [\MB_LUT6(c_target=artix7,init="1...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_FDRE [\MB_FDRE(c_target=artix7)\]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_MUXCY_XORCY [\MB_MUXCY_XORCY(c_target=artix7)...]
+Compiling architecture muxf7_v of entity unisim.MUXF7 [muxf7_default]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_MUXF7 [\MB_MUXF7(c_target=artix7)\]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_FDR [\MB_FDR(c_target=artix7)\]
+Compiling architecture imp of entity microblaze_v11_0_11.PC_Module_gti [\PC_Module_gti(c_data_size=32,c_...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_LUT6 [\MB_LUT6(c_target=artix7,init="0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000001111...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_LUT6 [\MB_LUT6(c_target=artix7,init="0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111000000001111...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_LUT6 [\MB_LUT6(c_target=artix7,init="1...]
+Compiling architecture fdse_v of entity unisim.FDSE [fdse_default]
+Compiling architecture fds_v of entity unisim.FDS [fds_default]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_FDS [\MB_FDS(c_target=artix7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000111111110000...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_LUT6 [\MB_LUT6(c_target=artix7,init="0...]
+Compiling architecture imp of entity microblaze_v11_0_11.PreFetch_Buffer_gti [\PreFetch_Buffer_gti(c_instr_siz...]
+Compiling architecture imp of entity microblaze_v11_0_11.jump_logic [\jump_logic(c_instr_size=32,c_ta...]
+Compiling architecture imp of entity microblaze_v11_0_11.Decode_gti [\Decode_gti(c_data_size=32,c_ins...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000001111111100...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_LUT6_2 [\MB_LUT6_2(c_target=artix7,init=...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0011110001011010")(0...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_LUT4 [\MB_LUT4(c_target=artix7,init="0...]
+Compiling architecture imp of entity microblaze_v11_0_11.Div_unit_gti [\Div_unit_gti(c_target=artix7,c_...]
+Compiling architecture ram32m_v of entity unisim.RAM32M [ram32m_default]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_RAM32M [\MB_RAM32M(c_target=artix7,c_use...]
+Compiling architecture imp of entity microblaze_v11_0_11.Register_File_gti [\Register_File_gti(c_data_size=3...]
+Compiling architecture imp of entity microblaze_v11_0_11.Operand_Select_gti [\Operand_Select_gti(c_data_size=...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="011000000111101010...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_LUT6_2 [\MB_LUT6_2(c_target=artix7,init=...]
+Compiling architecture imp of entity microblaze_v11_0_11.ALU_Bit [\ALU_Bit(c_target=artix7,c_allow...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01100000011110101010...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_LUT6 [\MB_LUT6(c_target=artix7,init="0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111101000001010")(0...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_LUT4 [\MB_LUT4(c_target=artix7,init="1...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture mult_and_v of entity unisim.MULT_AND [mult_and_default]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_MULT_AND [\MB_MULT_AND(c_target=artix7)\]
+Compiling architecture imp of entity microblaze_v11_0_11.ALU_Bit [\ALU_Bit(c_target=artix7,c_allow...]
+Compiling architecture imp of entity microblaze_v11_0_11.ALU [\ALU(c_data_size=32,c_allow_lut6...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_LUT6 [\MB_LUT6(c_target=rtl,init="1100...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_LUT6 [\MB_LUT6(c_target=rtl,init="1100...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_LUT6 [\MB_LUT6(c_target=rtl,init="1100...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_MUXF7 [\MB_MUXF7(c_target=rtl)\]
+Compiling architecture imp of entity microblaze_v11_0_11.carry_equal [\carry_equal(c_target=rtl,size=8...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_LUT6 [\MB_LUT6(c_target=rtl,init="0000...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_LUT6 [\MB_LUT6(c_target=rtl,init="0000...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_LUT6 [\MB_LUT6(c_target=rtl,init="0111...]
+Compiling architecture imp of entity microblaze_v11_0_11.count_leading_zeros [count_leading_zeros_default]
+Compiling architecture imp of entity microblaze_v11_0_11.Shift_Logic_Module_gti [\Shift_Logic_Module_gti(c_data_s...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,alumodereg=0...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_DSP48E1 [\MB_DSP48E1(c_target=artix7,acas...]
+Compiling architecture imp of entity microblaze_v11_0_11.dsp_module [\dsp_module(c_target=artix7,c_ab...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(alumodereg=0,carryinreg...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_DSP48E1 [\MB_DSP48E1(c_target=artix7,alum...]
+Compiling architecture imp of entity microblaze_v11_0_11.dsp_module [\dsp_module(c_target=artix7,c_ab...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,alumodereg=0...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_DSP48E1 [\MB_DSP48E1(c_target=artix7,acas...]
+Compiling architecture imp of entity microblaze_v11_0_11.dsp_module [\dsp_module(c_target=artix7,c_ab...]
+Compiling architecture imp of entity microblaze_v11_0_11.mul_unit [\mul_unit(c_data_size=32,c_targe...]
+Compiling architecture imp of entity microblaze_v11_0_11.Barrel_Shifter_gti [\Barrel_Shifter_gti(c_data_size=...]
+Compiling architecture imp of entity microblaze_v11_0_11.WB_Mux_Bit [\WB_Mux_Bit(c_target=artix7,c_lu...]
+Compiling architecture imp of entity microblaze_v11_0_11.WB_Mux_Bit [\WB_Mux_Bit(c_target=artix7,c_lu...]
+Compiling architecture imp of entity microblaze_v11_0_11.WB_Mux_Bit [\WB_Mux_Bit(c_target=artix7,c_lu...]
+Compiling architecture imp of entity microblaze_v11_0_11.WB_Mux [\WB_Mux(c_data_size=32,c_daddr_s...]
+Compiling architecture imp of entity microblaze_v11_0_11.Zero_Detect_gti [\Zero_Detect_gti(c_data_size=32,...]
+Compiling architecture imp of entity microblaze_v11_0_11.Byte_Doublet_Handle_gti [\Byte_Doublet_Handle_gti(c_data_...]
+Compiling architecture imp of entity microblaze_v11_0_11.Data_Flow_Logic [\Data_Flow_Logic(c_data_size=32,...]
+Compiling architecture msr_reg of entity microblaze_v11_0_11.msr_reg_gti [\msr_reg_gti(c_data_size=32,c_ta...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="111111110000000011...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_LUT6_2 [\MB_LUT6_2(c_target=artix7,init=...]
+Compiling architecture imp of entity microblaze_v11_0_11.mux_bus [\mux_bus(c_target=artix7,c_allow...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="100101101001011010...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_LUT6_2 [\MB_LUT6_2(c_target=artix7,init=...]
+Compiling architecture imp of entity microblaze_v11_0_11.exception_registers_gti [\exception_registers_gti(c_data_...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110101010100110")(0...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_LUT4 [\MB_LUT4(c_target=artix7,init="0...]
+Compiling architecture imp of entity microblaze_v11_0_11.carry_compare_const [\carry_compare_const(c_target=ar...]
+Compiling architecture imp of entity microblaze_v11_0_11.carry_compare [\carry_compare(c_target=artix7,s...]
+Compiling architecture imp of entity microblaze_v11_0_11.carry_compare [\carry_compare(c_target=artix7,s...]
+Compiling architecture imp of entity microblaze_v11_0_11.find_first_bit [\find_first_bit(c_mant_size=23,c...]
+Compiling architecture imp of entity microblaze_v11_0_11.FPU_ADDSUB [\FPU_ADDSUB(c_target=artix7,c_pr...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,alumodereg=0...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_DSP48E1 [\MB_DSP48E1(c_target=artix7,acas...]
+Compiling architecture imp of entity microblaze_v11_0_11.dsp_module [\dsp_module(c_target=artix7,c_a_...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,alumodereg=0...]
+Compiling architecture imp of entity microblaze_v11_0_11.MB_DSP48E1 [\MB_DSP48E1(c_target=artix7,acas...]
+Compiling architecture imp of entity microblaze_v11_0_11.dsp_module [\dsp_module(c_target=artix7,c_a_...]
+Compiling architecture imp of entity microblaze_v11_0_11.FPU_MUL [\FPU_MUL(c_target=artix7,c_preci...]
+Compiling architecture imp of entity microblaze_v11_0_11.FPU_DIV [\FPU_DIV(c_target=artix7,c_use_s...]
+Compiling architecture imp of entity microblaze_v11_0_11.Fpu [\Fpu(c_data_size=32,c_target=art...]
+Compiling architecture imp of entity microblaze_v11_0_11.PVR [\PVR(c_data_size=32,c_daddr_size...]
+Compiling architecture imp of entity microblaze_v11_0_11.Data_Flow_gti [\Data_Flow_gti(c_data_size=32,c_...]
+Compiling architecture imp of entity microblaze_v11_0_11.read_data_mux [\read_data_mux(c_data_size=32,c_...]
+Compiling architecture imp of entity microblaze_v11_0_11.instr_mux [\instr_mux(c_instr_size=32,c_lmb...]
+Compiling architecture imp of entity microblaze_v11_0_11.MMU [\MMU(c_data_size=32,c_daddr_size...]
+Compiling architecture imp of entity microblaze_v11_0_11.MicroBlaze_GTi [\MicroBlaze_GTi(c_num_sync_ff_cl...]
+Compiling architecture imp of entity microblaze_v11_0_11.mb_sync_bit [\mb_sync_bit(c_reset_value='1')\]
+Compiling architecture imp of entity microblaze_v11_0_11.MicroBlaze_Core [\MicroBlaze_Core(c_freq=10000000...]
+Compiling architecture imp of entity microblaze_v11_0_11.MicroBlaze [\MicroBlaze(c_freq=100000000,g_t...]
+Compiling architecture design_1_microblaze_0_0_arch of entity xil_defaultlib.design_1_microblaze_0_0 [design_1_microblaze_0_0_default]
+Compiling architecture byte_data_ram_a of entity axi_intc_v4_1_17.shared_ram_ivar [shared_ram_ivar_default]
+Compiling architecture imp of entity axi_intc_v4_1_17.intc_core [\intc_core(c_family="artix7",c_n...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=9,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=1,c_aw=9,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=1,c_aw=1,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=1,c_aw=1,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.address_decoder [\address_decoder(c_bus_awidth=9,...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.slave_attachment [\slave_attachment(c_ard_addr_ran...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.axi_lite_ipif [\axi_lite_ipif(c_s_axi_addr_widt...]
+Compiling architecture imp of entity axi_intc_v4_1_17.axi_intc [\axi_intc(c_family="artix7",c_in...]
+Compiling architecture design_1_microblaze_0_axi_intc_0_arch of entity xil_defaultlib.design_1_microblaze_0_axi_intc_0 [design_1_microblaze_0_axi_intc_0...]
+Compiling module xil_defaultlib.m00_couplers_imp_8RVYHO
+Compiling module xil_defaultlib.m01_couplers_imp_1UTB3Y5
+Compiling module xil_defaultlib.m02_couplers_imp_7ANRHB
+Compiling module xil_defaultlib.m03_couplers_imp_1W07O72
+Compiling module xil_defaultlib.m04_couplers_imp_5LX7BU
+Compiling module xil_defaultlib.m05_couplers_imp_1XR4ZAZ
+Compiling module xil_defaultlib.s00_couplers_imp_1RZP34U
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_addr_arbite...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_addr_decode...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_splitter(C_...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_register_slice_v2_1_28.axi_register_slice_v2_1_28_axic_...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_decerr_slav...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_crossbar_sa...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_axi_crossba...
+Compiling module xil_defaultlib.design_1_xbar_1
+Compiling module xil_defaultlib.design_1_microblaze_0_axi_periph...
+Compiling architecture imp of entity lmb_bram_if_cntlr_v4_0_22.pselect_mask [\pselect_mask(c_bar="00000000000...]
+Compiling architecture imp of entity lmb_bram_if_cntlr_v4_0_22.lmb_mux [\lmb_mux(c_target=artix7,c_basea...]
+Compiling architecture imp of entity lmb_bram_if_cntlr_v4_0_22.lmb_bram_if_cntlr [\lmb_bram_if_cntlr(c_family="art...]
+Compiling architecture design_1_dlmb_bram_if_cntlr_0_arch of entity xil_defaultlib.design_1_dlmb_bram_if_cntlr_0 [design_1_dlmb_bram_if_cntlr_0_de...]
+Compiling architecture imp of entity lmb_v10_v3_0_12.lmb_v10 [\lmb_v10(c_lmb_num_slaves=1)\]
+Compiling architecture design_1_dlmb_v10_0_arch of entity xil_defaultlib.design_1_dlmb_v10_0 [design_1_dlmb_v10_0_default]
+Compiling architecture imp of entity lmb_bram_if_cntlr_v4_0_22.pselect_mask [\pselect_mask(c_bar="00000000000...]
+Compiling architecture imp of entity lmb_bram_if_cntlr_v4_0_22.lmb_mux [\lmb_mux(c_target=artix7,c_basea...]
+Compiling architecture imp of entity lmb_bram_if_cntlr_v4_0_22.lmb_bram_if_cntlr [\lmb_bram_if_cntlr(c_family="art...]
+Compiling architecture design_1_ilmb_bram_if_cntlr_0_arch of entity xil_defaultlib.design_1_ilmb_bram_if_cntlr_0 [design_1_ilmb_bram_if_cntlr_0_de...]
+Compiling architecture design_1_ilmb_v10_0_arch of entity xil_defaultlib.design_1_ilmb_v10_0 [design_1_ilmb_v10_0_default]
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_output_stage(...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6(C_FAMILY="art...
+Compiling module xil_defaultlib.design_1_lmb_bram_0
+Compiling module xil_defaultlib.microblaze_0_local_memory_imp_1K...
+Compiling module xlconcat_v2_1_4.xlconcat_v2_1_4_xlconcat(dout_wi...
+Compiling module xil_defaultlib.design_1_microblaze_0_xlconcat_0
+Compiling module unisims_ver.IDELAYCTRL_default
+Compiling module xil_defaultlib.mig_7series_v4_2_iodelay_ctrl(IO...
+Compiling module unisims_ver.IBUF(IBUF_LOW_PWR="FALSE")
+Compiling module unisims_ver.IBUFG(IBUF_LOW_PWR="FALSE")
+Compiling module xil_defaultlib.mig_7series_v4_2_clk_ibuf(SYSCLK...
+Compiling module unisims_ver.XADC(INIT_40=16'b01000000000000,...
+Compiling module xil_defaultlib.mig_7series_v4_2_tempmon_default
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=8,CLKIN1...
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.BUFH
+Compiling module unisims_ver.MMCME2_ADV(BANDWIDTH="HIGH",CLKF...
+Compiling module xil_defaultlib.mig_7series_v4_2_infrastructure(...
+Compiling module xil_defaultlib.mig_7series_v4_2_rank_cntrl(DQRD...
+Compiling module xil_defaultlib.mig_7series_v4_2_round_robin_arb...
+Compiling module xil_defaultlib.mig_7series_v4_2_round_robin_arb...
+Compiling module xil_defaultlib.mig_7series_v4_2_rank_common(MAI...
+Compiling module xil_defaultlib.mig_7series_v4_2_rank_mach(CS_WI...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_compare(CO...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_state(DATA...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_queue_defa...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_cntrl(COL_...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_state(DATA...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_queue(ID=1...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_cntrl(COL_...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_state(DATA...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_queue(ID=2...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_cntrl(COL_...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_state(DATA...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_queue(ID=3...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_cntrl(COL_...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_common(LOW...
+Compiling module xil_defaultlib.mig_7series_v4_2_round_robin_arb...
+Compiling module xil_defaultlib.mig_7series_v4_2_arb_row_col(nCK...
+Compiling module xil_defaultlib.mig_7series_v4_2_arb_select(CS_W...
+Compiling module xil_defaultlib.mig_7series_v4_2_arb_mux(CS_WIDT...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_mach(COL_W...
+Compiling module unisims_ver.RAM32M
+Compiling module xil_defaultlib.mig_7series_v4_2_col_mach(COL_WI...
+Compiling module xil_defaultlib.mig_7series_v4_2_mc(CL=6,COL_WID...
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.OBUFT
+Compiling module unisims_ver.IOBUF_INTERMDISABLE(IBUF_LOW_PWR...
+Compiling module unisims_ver.IOBUFDS_DIFF_OUT_INTERMDISABLE(D...
+Compiling module unisims_ver.IDDR
+Compiling module xil_defaultlib.mig_7series_v4_2_poc_pd_default
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_of_pre_fifo...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_of_pre_fifo...
+Compiling module unisims_ver.BUFIO
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_of_pre_fifo...
+Compiling module unisims_ver.PHASER_OUT_PHY(FINE_DELAY=60,MEM...
+Compiling module unisims_ver.OUT_FIFO(ARRAY_MODE="ARRAY_MODE_...
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_OQ="SDR",DAT...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_group_...
+Compiling module unisims_ver.ODDR(DDR_CLK_EDGE="SAME_EDGE")
+Compiling module unisims_ver.OBUFDS
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_lane(B...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_group_...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_lane(A...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_if_post_fif...
+Compiling module unisims_ver.PHASER_IN_PHY(BURST_MODE="TRUE",...
+Compiling module unisims_ver.PHASER_OUT_PHY(CLKOUT_DIV=2,DATA...
+Compiling module unisims_ver.IN_FIFO
+Compiling module unisims_ver.OUT_FIFO
+Compiling module unisims_ver.ISERDESE2(INTERFACE_TYPE="MEMORY...
+Compiling module unisims_ver.IDELAYE2(HIGH_PERFORMANCE_MODE="...
+Compiling module unisims_ver.OSERDESE2(INIT_OQ=1'b1,INIT_TQ=1...
+Compiling module unisims_ver.OSERDESE2(INIT_OQ=1'b1,INIT_TQ=1...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_group_...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_lane(A...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_group_...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_lane(A...
+Compiling module unisims_ver.PHY_CONTROL(AO_TOGGLE=1,BURST_MO...
+Compiling module unisims_ver.PHASER_REF
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_4lanes(...
+WARNING: [VRFC 10-8809] cannot index into scalar type parameter/localparam 'PRESENT_DATA_A' [C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:709]
+WARNING: [VRFC 10-8809] cannot index into scalar type parameter/localparam 'PRESENT_DATA_B' [C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:708]
+WARNING: [VRFC 10-8809] cannot index into scalar type parameter/localparam 'PRESENT_DATA_C' [C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:707]
+WARNING: [VRFC 10-8809] cannot index into scalar type parameter/localparam 'PRESENT_DATA_D' [C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:706]
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_mc_phy(DATA...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_mc_phy_wrap...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_prbs_gen(DQ...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_init(tC...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_wrcal(n...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_wrlvl(D...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_ck_addr...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_dqs_fou...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_rdlvl(n...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_prbs_rd...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_tempmon...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_calib_top(n...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_top(DDR...
+Compiling module xil_defaultlib.mig_7series_v4_2_mem_intfc(DDR3_...
+Compiling module xil_defaultlib.mig_7series_v4_2_ui_cmd(ADDR_WID...
+Compiling module xil_defaultlib.mig_7series_v4_2_ui_wr_data(APP_...
+Compiling module xil_defaultlib.mig_7series_v4_2_ui_rd_data(APP_...
+Compiling module xil_defaultlib.mig_7series_v4_2_ui_top(APP_DATA...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_axic_regist...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_axic_regist...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_axic_regist...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_axic_regist...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_axi_registe...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_axic_regist...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_axic_regist...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_axic_regist...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_axic_regist...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_axi_registe...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_axic_regist...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_axic_regist...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_axic_regist...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_axi_registe...
+Compiling module unisims_ver.MUXCY
+Compiling module unisims_ver.XORCY
+Compiling module unisims_ver.AND2B1L
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_carry_latch...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_carry_and(C...
+Compiling module unisims_ver.OR2L
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_carry_latch...
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_command_fif...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_a_upsizer(C...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_comparator_...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_carry_or(C_...
+Compiling module unisims_ver.LUT6_2
+Compiling module unisims_ver.LUT4(INIT=16'b1100110011001010)
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.FDSE_default
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_comparator_...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_comparator_...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_w_upsizer(C...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_r_upsizer(C...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_axi_upsizer...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_axic_regist...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_axic_regist...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_axi_registe...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_incr_cmd...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_wrap_cmd...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_cmd_tran...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_wr_cmd_f...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_aw_chann...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_w_channe...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_fifo(C_W...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_b_channe...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_incr_cmd...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_wrap_cmd...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_cmd_tran...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_cmd_fsm(...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_ar_chann...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_fifo(C_W...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_fifo(C_W...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_r_channe...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_cmd_arbi...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc(C_FAMILY...
+Compiling module xil_defaultlib.mig_7series_v4_2_memc_ui_top_axi...
+Compiling module xil_defaultlib.design_1_mig_7series_0_0_mig_def...
+Compiling module xil_defaultlib.design_1_mig_7series_0_0
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.proc_sys_reset [\proc_sys_reset(c_family="artix7...]
+Compiling architecture design_1_rst_clk_wiz_1_100m_0_arch of entity xil_defaultlib.design_1_rst_clk_wiz_1_100M_0 [design_1_rst_clk_wiz_1_100m_0_de...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.proc_sys_reset [\proc_sys_reset(c_family="artix7...]
+Compiling architecture design_1_rst_mig_7series_0_100m_0_arch of entity xil_defaultlib.design_1_rst_mig_7series_0_100M_0 [design_1_rst_mig_7series_0_100m_...]
+Compiling module xil_defaultlib.design_1
+Compiling module unisims_ver.IOBUF
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot design_1_wrapper_behav
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:01:36 . Memory (MB): peak = 2117.898 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '96' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "design_1_wrapper_behav -key {Behavioral:sim_1:Functional:design_1_wrapper} -tclbatch {design_1_wrapper.tcl} -protoinst "protoinst_files/design_1.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//axi_dma_0/M_AXIS_MM2S
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//axi_dma_0/M_AXI_MM2S
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//axi_dma_0/M_AXI_S2MM
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//axi_dma_0/S_AXIS_S2MM
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//axi_dma_0/S_AXI_LITE
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//axi_gpio_0/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//axi_iic_0/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//axi_interconnect_0/M00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//axi_interconnect_0/S00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//axi_interconnect_0/S01_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//axi_interconnect_0/S02_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//axi_interconnect_0/S03_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//axi_interconnect_0/m00_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//axi_interconnect_0/m00_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//axi_interconnect_0/s00_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//axi_interconnect_0/s00_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//axi_interconnect_0/s01_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//axi_interconnect_0/s01_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//axi_interconnect_0/s02_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//axi_interconnect_0/s02_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//axi_interconnect_0/s03_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//axi_interconnect_0/s03_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//axi_interconnect_0/xbar/M00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//axi_interconnect_0/xbar/S00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//axi_interconnect_0/xbar/S01_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//axi_interconnect_0/xbar/S02_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//axi_interconnect_0/xbar/S03_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//axi_uartlite_0/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//d_axi_i2s_audio_0/AXI_L
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//d_axi_i2s_audio_0/AXI_MM2S
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//d_axi_i2s_audio_0/AXI_S2MM
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0/M_AXI_DC
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0/M_AXI_DP
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0/M_AXI_IC
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0_axi_intc/s_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0_axi_periph/M00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0_axi_periph/M01_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0_axi_periph/M02_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0_axi_periph/M03_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0_axi_periph/M04_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0_axi_periph/M05_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0_axi_periph/S00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0_axi_periph/m00_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0_axi_periph/m00_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0_axi_periph/m01_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0_axi_periph/m01_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0_axi_periph/m02_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0_axi_periph/m02_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0_axi_periph/m03_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0_axi_periph/m03_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0_axi_periph/m04_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0_axi_periph/m04_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0_axi_periph/m05_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0_axi_periph/m05_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0_axi_periph/s00_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0_axi_periph/s00_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0_axi_periph/xbar/M00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0_axi_periph/xbar/M01_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0_axi_periph/xbar/M02_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0_axi_periph/xbar/M03_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0_axi_periph/xbar/M04_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0_axi_periph/xbar/M05_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//microblaze_0_axi_periph/xbar/S00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//mig_7series_0/S_AXI
+Time resolution is 1 fs
+source design_1_wrapper.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+Block Memory Generator module design_1_wrapper.design_1_i.microblaze_0_local_memory.lmb_bram.inst.native_mem_mapped_module.blk_mem_gen_v8_4_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+WARNING: file design.txt could not be opened
+ *** Warning: The analog data file design.txt for XADC instance design_1_wrapper.design_1_i.mig_7series_0.u_design_1_mig_7series_0_0_mig.temp_mon_enabled.u_tempmon.xadc_supplied_temperature.XADC_inst was not found. Use the SIM_MONITOR_FILE parameter to specify the analog data file name or use the default name: design.txt.
+
+############# Write Clocks PLLE2_ADV Parameters #############
+
+nCK_PER_CLK      =       4
+CLK_PERIOD       =   10000
+CLKIN1_PERIOD    =  10.000
+DIVCLK_DIVIDE    =       1
+CLKFBOUT_MULT    =       8
+VCO_PERIOD       =  1250.0
+CLKOUT0_DIVIDE_F =       1
+CLKOUT1_DIVIDE   =       2
+CLKOUT2_DIVIDE   =      32
+CLKOUT3_DIVIDE   =       8
+CLKOUT0_PERIOD   =    1250
+CLKOUT1_PERIOD   =    2500
+CLKOUT2_PERIOD   =   40000
+CLKOUT3_PERIOD   =   10000
+CLKOUT4_PERIOD   =    5000
+############################################################
+
+############# MMCME2_ADV Parameters #############
+
+MMCM_MULT_F           =           8
+MMCM_VCO_FREQ (MHz)   = 800.000
+MMCM_VCO_PERIOD       = 1250.000
+#################################################
+
+design_1_wrapper.design_1_i.mig_7series_0.u_design_1_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : BYTE_LANES_B0 = f BYTE_LANES_B1 = 0 DATA_CTL_B0 = c DATA_CTL_B1 = 0
+design_1_wrapper.design_1_i.mig_7series_0.u_design_1_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : HIGHEST_LANE =           4 HIGHEST_LANE_B0 =           4 HIGHEST_LANE_B1 =           0
+design_1_wrapper.design_1_i.mig_7series_0.u_design_1_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : HIGHEST_BANK =           1
+design_1_wrapper.design_1_i.mig_7series_0.u_design_1_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : FREQ_REF_PERIOD         = 1250.00 
+design_1_wrapper.design_1_i.mig_7series_0.u_design_1_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : DDR_TCK                 = 2500 
+design_1_wrapper.design_1_i.mig_7series_0.u_design_1_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_S2_TAPS_SIZE         = 9.77 
+design_1_wrapper.design_1_i.mig_7series_0.u_design_1_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_EARLY       = 1 
+design_1_wrapper.design_1_i.mig_7series_0.u_design_1_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_OFFSET      = 1219.75 
+design_1_wrapper.design_1_i.mig_7series_0.u_design_1_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_META_ZONE   = 200.00 
+design_1_wrapper.design_1_i.mig_7series_0.u_design_1_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_FINE_INTR_DLY   = 769.25 
+design_1_wrapper.design_1_i.mig_7series_0.u_design_1_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_COARSE_INTR_DLY = 511.00 
+design_1_wrapper.design_1_i.mig_7series_0.u_design_1_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_INTRINSIC_DELAY = 1280.25 
+design_1_wrapper.design_1_i.mig_7series_0.u_design_1_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_DELAY       = 60 
+design_1_wrapper.design_1_i.mig_7series_0.u_design_1_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_INTRINSIC_DELAY      = 1280.25 
+design_1_wrapper.design_1_i.mig_7series_0.u_design_1_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_DELAY                = 1866.19 
+design_1_wrapper.design_1_i.mig_7series_0.u_design_1_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_OCLK_DELAY           = 0 
+design_1_wrapper.design_1_i.mig_7series_0.u_design_1_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : L_PHY_0_PO_FINE_DELAY   = 60 
+design_1_wrapper.design_1_i.mig_7series_0.u_design_1_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG1_INTRINSIC_DELAY = 0.00 
+design_1_wrapper.design_1_i.mig_7series_0.u_design_1_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG2_INTRINSIC_DELAY = 744.00 
+design_1_wrapper.design_1_i.mig_7series_0.u_design_1_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_INTRINSIC_DELAY      = 744.00 
+design_1_wrapper.design_1_i.mig_7series_0.u_design_1_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_MAX_STG2_DELAY       = 615.23 
+design_1_wrapper.design_1_i.mig_7series_0.u_design_1_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_OFFSET               = -78.00 
+design_1_wrapper.design_1_i.mig_7series_0.u_design_1_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : a negative PI_OFFSET means that rclk path is longer than oclk path so rclk will be delayed to next oclk edge and the negedge of rclk may be used.
+design_1_wrapper.design_1_i.mig_7series_0.u_design_1_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG2_DELAY           = 615.23 
+design_1_wrapper.design_1_i.mig_7series_0.u_design_1_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy :PI_STG2_DELAY_CAND       = 1172.00 
+design_1_wrapper.design_1_i.mig_7series_0.u_design_1_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : DEFAULT_RCLK_DELAY      = 63 
+design_1_wrapper.design_1_i.mig_7series_0.u_design_1_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : RCLK_SELECT_EDGE        = 0 
+WARNING: design_1_wrapper.design_1_i.mig_7series_0.u_design_1_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy: The required delay though the phaser_in to internally match the aux_out clock  to ddr clock exceeds the maximum allowable delay. The clock edge  will occur at the output registers of aux_out 556.77 ps before the ddr clock  edge. If aux_out is used for memory inputs, this may violate setup or hold time.
+Note: axi_iic configured for SDA inertial delay of 0 clocks.
+Time: 0 fs  Iteration: 0  Process: /design_1_wrapper/design_1_i/axi_iic_0/U0/X_IIC/FILTER_I/line__5051  File: C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/06a7/hdl/axi_iic_v2_1_vh_rfs.vhd
+Note: axi_iic configured for SCL inertial delay of 0 clocks.
+Time: 0 fs  Iteration: 0  Process: /design_1_wrapper/design_1_i/axi_iic_0/U0/X_IIC/FILTER_I/line__5025  File: C:/Users/Ryan/Desktop/Nexys-Video-HW/Nexys-Video-HW.gen/sources_1/bd/design_1/ipshared/06a7/hdl/axi_iic_v2_1_vh_rfs.vhd
+Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value. design_1_wrapper.design_1_i.axi_dma_0.U0.I_PRMRY_DATAMOVER.gen_s2mm_full.I_S2MM_FULL_WRAPPER.gen_enable_indet_btt_sf.I_INDET_BTT.I_XD_FIFO.non_blk_mem.I_SYNC_FIFOGEN_FIFO.xpm_fifo_instance.xpm_fifo_sync_inst.xpm_fifo_base_inst.gen_sdpram.xpm_memory_base_inst.config_drc
+Time: 1 ps  Iteration: 0  Process: /design_1_wrapper/design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/gen_s2mm_full/I_S2MM_FULL_WRAPPER/gen_enable_indet_btt_sf/I_INDET_BTT/I_XD_FIFO/non_blk_mem/I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/Initial310_80  Scope: design_1_wrapper.design_1_i.axi_dma_0.U0.I_PRMRY_DATAMOVER.gen_s2mm_full.I_S2MM_FULL_WRAPPER.gen_enable_indet_btt_sf.I_INDET_BTT.I_XD_FIFO.non_blk_mem.I_SYNC_FIFOGEN_FIFO.xpm_fifo_instance.xpm_fifo_sync_inst.xpm_fifo_base_inst.gen_sdpram.xpm_memory_base_inst.config_drc  File: C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv Line: 522
+xsim: Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 2526.500 ; gain = 315.203
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'design_1_wrapper_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:26 ; elapsed = 00:02:29 . Memory (MB): peak = 2526.500 ; gain = 412.246
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 15 01:40:03 2026...

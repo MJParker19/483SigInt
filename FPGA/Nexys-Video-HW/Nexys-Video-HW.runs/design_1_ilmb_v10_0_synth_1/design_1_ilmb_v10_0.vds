@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed Jul  5 18:33:30 2023
+# Process ID: 4928
+# Current directory: C:/Work/NVDMA/Nexys-Video-HW/proj/Nexys-Video-HW.runs/design_1_ilmb_v10_0_synth_1
+# Command line: vivado.exe -log design_1_ilmb_v10_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_ilmb_v10_0.tcl
+# Log file: C:/Work/NVDMA/Nexys-Video-HW/proj/Nexys-Video-HW.runs/design_1_ilmb_v10_0_synth_1/design_1_ilmb_v10_0.vds
+# Journal file: C:/Work/NVDMA/Nexys-Video-HW/proj/Nexys-Video-HW.runs/design_1_ilmb_v10_0_synth_1\vivado.jou
+# Running On: DELL_Denis, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 34029 MB
+#-----------------------------------------------------------
+source design_1_ilmb_v10_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 484.230 ; gain = 160.430
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Work/NVDMA/Nexys-Video-HW/repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx2/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_ilmb_v10_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 2a7f251322d75f5d to dir: C:/Work/NVDMA/Nexys-Video-HW/proj/Nexys-Video-HW.runs/design_1_ilmb_v10_0_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Work/NVDMA/Nexys-Video-HW/proj/cache/2/a/2a7f251322d75f5d/design_1_dlmb_v10_0.dcp to C:/Work/NVDMA/Nexys-Video-HW/proj/Nexys-Video-HW.runs/design_1_ilmb_v10_0_synth_1/design_1_ilmb_v10_0.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Work/NVDMA/Nexys-Video-HW/proj/cache/2/a/2a7f251322d75f5d/design_1_dlmb_v10_0_sim_netlist.v to C:/Work/NVDMA/Nexys-Video-HW/proj/Nexys-Video-HW.runs/design_1_ilmb_v10_0_synth_1/design_1_ilmb_v10_0_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Work/NVDMA/Nexys-Video-HW/proj/cache/2/a/2a7f251322d75f5d/design_1_dlmb_v10_0_sim_netlist.vhdl to C:/Work/NVDMA/Nexys-Video-HW/proj/Nexys-Video-HW.runs/design_1_ilmb_v10_0_synth_1/design_1_ilmb_v10_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Work/NVDMA/Nexys-Video-HW/proj/cache/2/a/2a7f251322d75f5d/design_1_dlmb_v10_0_stub.v to C:/Work/NVDMA/Nexys-Video-HW/proj/Nexys-Video-HW.runs/design_1_ilmb_v10_0_synth_1/design_1_ilmb_v10_0_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Work/NVDMA/Nexys-Video-HW/proj/cache/2/a/2a7f251322d75f5d/design_1_dlmb_v10_0_stub.vhdl to C:/Work/NVDMA/Nexys-Video-HW/proj/Nexys-Video-HW.runs/design_1_ilmb_v10_0_synth_1/design_1_ilmb_v10_0_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_ilmb_v10_0, cache-ID = 2a7f251322d75f5d.
+INFO: [Common 17-206] Exiting Vivado at Wed Jul  5 18:33:49 2023...
