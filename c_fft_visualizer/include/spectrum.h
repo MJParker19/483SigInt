@@ -1,0 +1,140 @@
+#ifndef SPECTRUM_H
+#define SPECTRUM_H
+
+#include "redefines.h"
+
+#include <raylib.h>
+#include <fftw3.h>
+#include "config.h"
+
+#define FRACTIONAL_OCTAVE_1_1 1
+#define FRACTIONAL_OCTAVE_1_3 (1.0 / 3.0)
+#define FRACTIONAL_OCTAVE_1_6 (1.0 / 6.0)
+#define FRACTIONAL_OCTAVE_1_12 (1.0 / 12.0)
+#define FRACTIONAL_OCTAVE_1_24 (1.0 / 24.0)
+#define FRACTIONAL_OCTAVE_1_48 (1.0 / 48.0)
+
+#define NUM_FRACTIONAL_OCTAVES 6
+#define NUM_BAR_GRADIENTS 7
+
+#define FREQ_WEIGHTING_Z 0
+#define FREQ_WEIGHTING_A 1
+#define FREQ_WEIGHTING_C 2
+#define NUM_FREQ_WEIGHTING_MODES 3
+
+#define TIME_WEIGHTING_FAST 0
+#define TIME_WEIGHTING_SLOW 1
+#define TIME_WEIGHTING_IMPULSE 2
+#define NUM_TIME_WEIGHTING_MODES 3
+
+extern const f64 FRACTIONAL_OCTAVES[NUM_FRACTIONAL_OCTAVES];
+
+typedef struct
+{
+    Color bottom;
+    Color top;
+} bar_gradient_t;
+
+typedef struct
+{
+    i32 bar_gradient_index;
+    bar_gradient_t bar_gradients[NUM_BAR_GRADIENTS];
+
+    f64 fft_in[FFT_WINDOW_SIZE];
+    fftw_complex fft_out[(FFT_WINDOW_SIZE / 2) + 1];
+    fftw_plan fft_plan;
+    i32 fft_bins;
+    f64 bin_mag[(FFT_WINDOW_SIZE / 2) + 1];
+
+    i32 num_bars;
+    i32 sample_rate;
+    f64 *bar_target;
+    f64 *bar_smoothed;
+    f64 *peak_power;
+    f64 *max_hold_power;
+    f64 *bar_freq_center;
+
+    f64 *peak_hold_timer;
+
+    bool pinking_enabled;
+    i32 db_smoothing_enabled;
+    f64 smooth_attack_ms;
+    f64 smooth_release_ms;
+    f64 db_smooth_attack_ms;
+    f64 db_smooth_release_ms;
+    f64 peak_hold_seconds;
+
+    f64 f_min;
+    f64 f_max;
+    f64 log_f_ratio;
+
+    f64 fractional_octave;
+    f64 fractional_k;
+    i32 fractional_octave_index;
+
+    f64 seconds_per_window;
+    f64 accumulator;
+
+    i32 hop_size;
+    f64 window[FFT_WINDOW_SIZE];
+    f64 hpf_alpha;
+    f64 hpf_prev_x;
+    f64 hpf_prev_y;
+
+    i32 window_index;
+    i32 total_windows;
+    Texture2D gradient_tex;
+    RenderTexture2D fft_rt;
+    i32 last_width;
+    i32 last_height;
+    i32 plot_left;
+    i32 plot_top;
+    i32 plot_width;
+    i32 plot_height;
+    Font font;
+
+    f64 meter_interval_elapsed;
+    f64 meter_sum_sq;
+    f64 meter_peak_lin;
+    i32 meter_sample_count;
+    f64 meter_rms_dbfs;
+    f64 meter_peak_dbfs;
+    f64 meter_rms_dbspl;
+    f64 meter_peak_dbspl;
+    f64 meter_rms_dbfs_display;
+    f64 meter_peak_dbfs_display;
+    f64 meter_rms_dbspl_display;
+    f64 meter_peak_dbspl_display;
+    f64 meter_readout_smooth_ms;
+
+    i32 frequency_weighting_mode;
+    i32 time_weighting_mode;
+    i32 spl_features_enabled;
+    f64 spl_offset_db;
+    f64 calibrator_target_db_spl;
+    i32 spl_calibrated;
+
+    f64 meter_rms_sq_tw;
+    f64 meter_peak_lin_tw;
+    f64 meter_tw_alpha_fastslow;
+    f64 meter_tw_alpha_attack;
+    f64 meter_tw_alpha_release;
+} spectrum_state_t;
+
+void spectrum_set_fractional_octave(spectrum_state_t *s, f64 frac, i32 index);
+Texture2D create_gradient_texture(i32 height, bar_gradient_t grad);
+
+void spectrum_init(spectrum_state_t *s, Wave *wave, Font font);
+void spectrum_destroy(spectrum_state_t *s);
+void spectrum_set_total_windows(spectrum_state_t *s, i32 total);
+i32 spectrum_done(const spectrum_state_t *s);
+void spectrum_handle_resize(spectrum_state_t *s);
+void spectrum_update(spectrum_state_t *s, Wave *wave, f32 *samples, f64 dt);
+void spectrum_render_to_texture(spectrum_state_t *s);
+void spectrum_set_peak_hold_seconds(spectrum_state_t *s, f64 seconds);
+void spectrum_reset_peaks(spectrum_state_t *s);
+void spectrum_cycle_frequency_weighting(spectrum_state_t *s);
+void spectrum_cycle_time_weighting(spectrum_state_t *s);
+void spectrum_calibrate_spl(spectrum_state_t *s, f64 target_db_spl);
+
+#endif
