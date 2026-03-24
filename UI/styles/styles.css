@@ -86,18 +86,19 @@ main {
   color: #0d47a1; /* Dark blue text */
 }
 
-.overlay{
-  background-color: rgba(0,0,0,5);
+.overlay {
+  background-color: rgba(0,0,0,0.5);
   height: 100vh;
   padding: 1px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;  /* changed from center */
   text-align: center;
-  background-image: url("../images/image1.jpg");  /* put image here*/
+  background-image: url("../images/image1.jpg");
   background-size: cover;
   background-position: center;
-
+  overflow-y: auto;         /* ADD: enables vertical scroll */
+  padding-bottom: 50px;     /* space at bottom */
 }
 
 .button{
@@ -122,6 +123,28 @@ main {
   border: 3px solid #555
 }
 
+/* Graph area */
+#chart-controls {
+  display: none !important;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#chart-section {
+  width: 100%;           /* take full width inside hero box */
+  max-width: 1400px;     /* increase or remove cap to go wider */
+  height: 500px;         /* controls height of graph area */
+  margin: 20px auto;     /* center horizontally */
+  background: transparent;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+#chart-section canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
 
 
 
