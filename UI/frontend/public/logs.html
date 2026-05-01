@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SigInt Project - Logs</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    #logs {
+      margin-top: 20px;
+      padding: 10px;
+    }
+
+    .log-entry {
+      background: rgba(255,255,255,0.1);
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="hero-box">
+      <div class="overlay">
+        <div>
+          <h1>Logs</h1>
+
+          <section id="sigint-options">
+            <button onclick="window.location.href='index.html'">Home</button>
+            <button onclick="window.location.href='radar.html'">Radar</button>
+            <button onclick="window.location.href='graphs.html'">Graphs</button>
+          </section>
+
+          <!-- LOG DISPLAY -->
+          <div id="logs"></div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    async function loadData() {
+      try {
+        const res = await fetch("data.json");
+        const newData = await res.json();
+
+        let history = JSON.parse(localStorage.getItem("scanHistory")) || [];
+
+        const existingFiles = new Set(history.map(e => e.file));
+
+        newData.forEach(entry => {
+          if (!existingFiles.has(entry.file)) {
+            entry.timestamp = Date.now();
+            history.push(entry);
+          }
+        });
+
+        localStorage.setItem("scanHistory", JSON.stringify(history));
+
+        displayLogs(history);
+      } catch (err) {
+        console.error("Error loading data:", err);
+      }
+    }
+
+    function displayLogs(history) {
+      const container = document.getElementById("logs");
+
+      // newest first
+      const sorted = [...history].sort((a, b) => b.timestamp - a.timestamp);
+
+      container.innerHTML = sorted.map(entry => `
+        <div class="log-entry">
+          <strong>${entry.file}</strong><br>
+          Time: ${new Date(entry.timestamp).toLocaleString()}<br>
+          Points: ${entry.points.length}
+        </div>
+      `).join("");
+    }
+
+    // refresh every second
+    setInterval(loadData, 1000);
+    loadData();
+  </script>
+</body>
+</html>

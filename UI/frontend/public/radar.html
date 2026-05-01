@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SigInt Project - Radar</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    .chart-panel {
+      background: transparent;
+      height: 520px;
+      width: 100%;
+      max-width: 950px;
+      margin: 40px auto;
+    }
+
+    .chart-panel canvas {
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .hero-box .overlay > div {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    #sigint-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    button {
+      text-decoration: none;
+      background-color: #555;
+      color: #eee;
+      padding: 8px 15px;
+      border-radius: 5px;
+      font-weight: bold;
+      border: 3px solid #888;
+      transition: all .2s linear;
+      position: relative;
+      top: 0px;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    button:hover {
+      top: -3px;
+      background-color: #333;
+      color: #fff;
+      border: 3px solid #555;
+    }
+
+    h3 {
+      color: white;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="hero-box">
+      <div class="overlay">
+        <div>
+          <h1>Radar Graphs</h1>
+
+          <section id="sigint-options">
+            <button onclick="window.location.href='index.html'">Home</button>
+            <button onclick="window.location.href='graphs.html'">Graphs</button>
+            <button onclick="window.location.href='radar.html'">Radar</button>
+          </section>
+
+          <div class="chart-panel">
+            <h3>Mic 1</h3>
+            <canvas id="chartMic1"></canvas>
+          </div>
+
+          <div class="chart-panel">
+            <h3>Mic 2</h3>
+            <canvas id="chartMic2"></canvas>
+          </div>
+
+          <div class="chart-panel">
+            <h3>Mic 3</h3>
+            <canvas id="chartMic3"></canvas>
+          </div>
+
+          <div class="chart-panel">
+            <h3>Mic 4</h3>
+            <canvas id="chartMic4"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const BIN_COUNT = 4097;
+
+    // Smaller step = more spokes/labels around the circle
+    const SAMPLE_STEP = 128;
+
+    const sampledBins = Array.from(
+      { length: Math.ceil(BIN_COUNT / SAMPLE_STEP) },
+      (_, i) => i * SAMPLE_STEP
+    ).filter(bin => bin < BIN_COUNT);
+
+    function createRadarChart(canvasId) {
+      return new Chart(document.getElementById(canvasId).getContext('2d'), {
+        type: 'radar',
+        data: {
+          labels: sampledBins.map(String),
+          datasets: []
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          animation: false,
+          plugins: {
+            legend: {
+              display: false
+            },
+            tooltip: {
+              enabled: true
+            }
+          },
+          elements: {
+            line: {
+              borderWidth: 2,
+              tension: 0
+            },
+            point: {
+              radius: 1.5,
+              hoverRadius: 4
+            }
+          },
+          scales: {
+            r: {
+              beginAtZero: true,
+
+              angleLines: {
+                display: true,
+                color: 'rgba(255,255,255,0.45)',
+                lineWidth: 1.5
+              },
+
+              grid: {
+                circular: true,
+                color: 'rgba(255,255,255,0.28)',
+                lineWidth: 1.2
+              },
+
+              pointLabels: {
+                color: 'white',
+                padding: 24,
+                centerPointLabels: false,
+                font: {
+                  size: 10
+                }
+              },
+
+              ticks: {
+                count: 6,
+                color: 'white',
+                backdropColor: 'transparent',
+                showLabelBackdrop: false
+              }
+            }
+          }
+        }
+      });
+    }
+
+    const chartMic1 = createRadarChart('chartMic1');
+    const chartMic2 = createRadarChart('chartMic2');
+    const chartMic3 = createRadarChart('chartMic3');
+    const chartMic4 = createRadarChart('chartMic4');
+
+    const API_URL = '/data/data.json';
+
+    async function fetchNewData() {
+      try {
+        const res = await fetch(API_URL);
+        if (!res.ok) {
+          console.error('API error', res.status);
+          return;
+        }
+
+        const filesData = await res.json();
+
+        const micMap = {
+          1: filesData.find(f => /Mic_1/i.test(f.file)) || null,
+          2: filesData.find(f => /Mic_2/i.test(f.file)) || null,
+          3: filesData.find(f => /Mic_3/i.test(f.file)) || null,
+          4: filesData.find(f => /Mic_4/i.test(f.file)) || null
+        };
+
+        function buildDataset(fileData, color) {
+          if (!fileData) return [];
+
+          const map = new Map();
+          fileData.points.forEach(p => {
+            map.set(Number(p.bin), Number(p.re));
+          });
+
+          const values = sampledBins.map(bin => {
+            const v = map.get(bin);
+            return v !== undefined ? v : null;
+          });
+
+          return [{
+            label: fileData.file,
+            data: values,
+            borderColor: color,
+            backgroundColor: color.replace('1)', '0.20)'),
+            pointBackgroundColor: color,
+            pointBorderColor: color,
+            pointHoverBackgroundColor: '#ffffff',
+            pointHoverBorderColor: color,
+            fill: true,
+            spanGaps: true
+          }];
+        }
+
+        chartMic1.data.datasets = buildDataset(micMap[1], 'rgba(54, 162, 235, 1)');
+        chartMic2.data.datasets = buildDataset(micMap[2], 'rgba(255, 99, 132, 1)');
+        chartMic3.data.datasets = buildDataset(micMap[3], 'rgba(75, 192, 192, 1)');
+        chartMic4.data.datasets = buildDataset(micMap[4], 'rgba(255, 206, 86, 1)');
+
+        chartMic1.update();
+        chartMic2.update();
+        chartMic3.update();
+        chartMic4.update();
+      } catch (err) {
+        console.error('Error fetching data:', err);
+      }
+    }
+
+    fetchNewData();
+    setInterval(fetchNewData, 5000);
+  </script>
+</body>
+</html>
